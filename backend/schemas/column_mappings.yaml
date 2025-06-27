@@ -1,0 +1,124 @@
+monitor:
+  fields:
+    monitor_id:
+      raw_patterns:
+        - "FM / DM / PL"
+        - "FM/DM/PL"
+        - "FM/ DM /PL"
+        - "FM\\s*/\\s*DM\\s*/\\s*PL"
+        - "RG Number"
+        - "RG_Number"
+        - "RGNumber"
+      input_type: "string"
+      target_type: "string"
+      required: true
+      validation:
+        - "not_empty"
+    
+    install_date:
+      raw_patterns:
+        - "Install Date"
+        - "Installation Date"
+        - "Deployment Date"
+        - "Install\\s+Date"
+        - "Installation\\s+Date"
+      input_type: "string"
+      target_type: "datetime"
+      required: false
+      default: null
+    
+    w3w:
+      raw_patterns:
+        - "W3W"
+        - "w3w"
+      input_type: "string"
+      target_type: "string"
+      required: false
+      default: null
+    
+    location:
+      raw_patterns:
+        - "Location"
+        - "Place"
+        - "Specific Location"
+        - "Specific\\s+Location"
+      input_type: "string"
+      target_type: "string"
+      required: false
+      default: null
+    
+    mh_reference:
+      raw_patterns:
+        - "MH Reference"
+        - "Manhole Ref"
+        - "MH Ref"
+        - "MH\\s+Reference"
+        - "Manhole\\s+Ref"
+      input_type: "string"
+      target_type: "string"
+      required: false
+      default: null
+    
+    pipe:
+      raw_patterns:
+        - "Pipe"
+        - "Pipe ID"
+        - "Pipe Number"
+        - "Pipe\\s+ID"
+        - "Pipe\\s+Number"
+      input_type: "string"
+      target_type: "string"
+      required: false
+      default: null
+    
+    height_mm:
+      raw_patterns:
+        - "Height (mm)"
+        - "Height\\s*\\(mm\\)"
+        - "Height in mm"
+        - "Height\\s+in\\s+mm"
+      input_type: ["string", "float", "integer"]
+      target_type: "integer"
+      required: false
+      default: null
+      validation:
+        - "positive_number"
+      transform: "round_to_int"
+    
+    width_mm:
+      raw_patterns:
+        - "Width (mm)"
+        - "Width\\s*\\(mm\\)"
+        - "Width in mm"
+        - "Width\\s+in\\s+mm"
+      input_type: ["string", "float", "integer"]
+      target_type: "integer"
+      required: false
+      default: null
+      validation:
+        - "positive_number"
+      transform: "round_to_int"
+    
+    shape:
+      raw_patterns:
+        - "Shape"
+        - "Cross Section"
+        - "Cross\\s+Section"
+      input_type: "string"
+      target_type: "string"
+      required: false
+      default: null
+    
+    depth_mm:
+      raw_patterns:
+        - "Depth (mm)"
+        - "Depth\\s*\\(mm\\)"
+        - "Depth in mm"
+        - "Depth\\s+in\\s+mm"
+      input_type: ["string", "float", "integer"]
+      target_type: "integer"
+      required: false
+      default: null
+      validation:
+        - "positive_number"
+      transform: "round_to_int"

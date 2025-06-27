@@ -1,0 +1,27 @@
+fastapi[all]==0.115.*
+uvicorn[standard]
+SQLAlchemy==2.0.*
+asyncpg
+alembic
+pydantic[email]
+python-multipart    # form-data parsing
+aiofiles            # async file IO
+duckdb
+boto3               # MinIO / S3
+qdrant-client
+celery[redis]==5.*
+redis[hiredis]
+python-decouple     # env vars
+loguru
+httpx               # calling ML service
+python-jose         # JWT
+passlib[bcrypt]
+prometheus-client
+pandas
+numpy
+python-dotenv
+apscheduler
+psycopg2-binary
+openpyxl
+xlrd
+PyYAML

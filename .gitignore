@@ -1,0 +1,30 @@
+# ========== Python backend ==========
+__pycache__/
+*.py[cod]
+*.egg-info/
+backend/.env.*
+*.sqlite3
+
+# ========== Node frontend ==========
+node_modules/
+dist/
+build/
+.env
+.env.development
+.env.production
+
+# ========== VS Code ==========
+.vscode/
+
+# ========== System files ==========
+.DS_Store
+Thumbs.db
+
+# ========== Docker logs ==========
+*.log
+
+# ========== Ignore uploaded user files ==========
+backend/uploaded_files/
+
+# ========== Ignore markdown files ==========
+*.md
