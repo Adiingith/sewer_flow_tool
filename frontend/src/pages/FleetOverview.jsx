@@ -84,7 +84,7 @@ function FleetOverview() {
                 width: d.width_mm,
                 shape: d.shape,
                 depth: d.depth_mm,
-                actioned: d.actioned || '', // 如果后端没有，先传空字符串
+                actioned: d.actioned || '', // if backend doesn't have, send empty string
             }));
             setDevices(mappedData);
             setTotalPages(Math.ceil(data.total / data.limit));

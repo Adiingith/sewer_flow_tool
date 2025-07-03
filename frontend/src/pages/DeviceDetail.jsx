@@ -322,14 +322,15 @@ function DeviceDetail() {
         : `${apiUrl}/api/v1/responsibilities/`;
     
     const payload = { ...editableResponsibility };
-    if (!editableResponsibility.id) {
-        payload.monitor_id = deviceData.id;
-    }
+    payload.monitor_id = deviceData.id;
     delete payload.id;
 
     if (payload.removal_date === '') {
         payload.removal_date = null;
     }
+
+    // add log, print payload
+    console.log(' payload:', payload);
 
     try {
         const response = await fetch(url, {
@@ -337,7 +338,13 @@ function DeviceDetail() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
-        if (!response.ok) throw new Error("Failed to save responsibility data");
+        // add log, print response status and content
+        console.log('backend returned response:', response.status, response.statusText);
+        if (!response.ok) {
+          const errorText = await response.text();
+          console.error('backend returned error content:', errorText);
+          throw new Error("Failed to save responsibility data");
+        }
         
         await fetchAllDeviceData(); // Refetch all data
         setEditMode(false);

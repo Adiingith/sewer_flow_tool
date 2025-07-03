@@ -8,21 +8,30 @@ from backend.core.db_connect import get_session
 from backend.models.monitor import Monitor
 import backend.schemas.monitorSchemas as monitorSchemas
 from backend.services.data_processor import DataProcessor
-# Placeholder for future service
-# from backend.services.time_series_processor import TimeSeriesProcessor
+from backend.services.time_series_processor import TimeSeriesProcessor
+import yaml
 
 
 router = APIRouter()
 
-async def process_time_series_data_placeholder(file: UploadFile, area: str):
+# Load device ID mapping configuration
+with open('backend/schemas/device_id_mappings.yaml', 'r', encoding='utf-8') as f:
+    DEVICE_ID_MAP = yaml.safe_load(f)['id_map']
+
+async def process_time_series_data(file: UploadFile, area: str, db: AsyncSession):
     """
-    This is a placeholder for processing time series data.
-    It will be replaced with the actual implementation logic.
+    Process time series data: save file, parse, and write to database.
     """
-    print(f"Received Time Series data for area '{area}' with filename '{file.filename}'.")
-    # In the future, this will call a dedicated service like TimeSeriesProcessor
-    # and perform data validation, cleaning, and database insertion.
-    return {"message": f"Time series file '{file.filename}' received but not processed (placeholder)."}
+    processor = TimeSeriesProcessor()
+    # Save file
+    file_path = await processor.save_file(file, area, 'Monitor Time Series Data')
+    # Parse fdv file
+    measurements = processor.parse_fdv(file_path)
+    if not measurements:
+        return {"message": f"File parsing failed or no valid data: {file.filename}"}
+    # Write to database
+    await processor.insert_measurements(db, measurements)
+    return {"message": f"Successfully imported {len(measurements)} time series data."}
 
 
 @router.post("/upload_file")
@@ -30,6 +39,7 @@ async def upload_file(
     file: UploadFile = File(...),
     model_type: str = Form(...),
     area: str = Form(...),
+    interim: Optional[str] = Form(None),
     db: AsyncSession = Depends(get_session)
 ):
     """
@@ -61,9 +71,52 @@ async def upload_file(
             return {"message": f"Successfully imported {len(monitors_to_add)} monitors."}
 
         elif model_type == "Monitor Time Series Data":
-            # Call the placeholder function for time series data
-            result = await process_time_series_data_placeholder(file, area)
-            return result
+            # interim parameter validation
+            if not interim or not interim.isdigit():
+                raise HTTPException(status_code=400, detail="The 'interim' field is required and must be a number!")
+            interim_str = f"interim{int(interim)}"
+            processor = TimeSeriesProcessor()
+            file_url, object_name = await processor.save_file(file, area, 'Monitor Time Series Data', interim=interim_str)
+            # Parse IDENTIFIER and START_END_INTERVAL
+            # Get content from minio
+            obj = processor.s3_client.get_object(Bucket=processor.bucket_name, Key=object_name)
+            content = obj['Body'].read().decode('utf-8', errors='ignore')
+            lines = content.splitlines()
+            monitor_id_str = None
+            start_time_str = None
+            cstart_found = False
+            for idx, line in enumerate(lines):
+                if line.strip().startswith('**IDENTIFIER'):
+                    # Get the content after the colon, then after the last comma, remove spaces
+                    after_colon = line.strip().split(':', 1)[-1] if ':' in line else line.strip()
+                    monitor_id_str = after_colon.split(',')[-1].strip()
+                if line.strip().startswith('*CSTART'):
+                    cstart_found = True
+                    cstart_idx = idx
+                if monitor_id_str and cstart_found:
+                    break
+            # If *CSTART found, get the next line's first field as start_time_str
+            if cstart_found and cstart_idx + 2 < len(lines):
+                start_time_str = lines[cstart_idx + 2].strip().split()[0]
+            if not monitor_id_str or not start_time_str:
+                raise HTTPException(status_code=400, detail="FDV file is missing IDENTIFIER or start time information.")
+            # device id mapping
+            if monitor_id_str and len(monitor_id_str) >= 2:
+                prefix = monitor_id_str[0]
+                if prefix in DEVICE_ID_MAP:
+                    mapped_prefix = DEVICE_ID_MAP[prefix]
+                    # ensure zero padding format consistent, e.g. F01->FM01
+                    monitor_id_str = f"{mapped_prefix}{monitor_id_str[1:]}"
+            # Find monitor.id
+            monitor_obj = (await db.execute(select(Monitor).where(Monitor.monitor_id == monitor_id_str))).scalar_one_or_none()
+            if not monitor_obj:
+                raise HTTPException(status_code=400, detail=f"Device with monitor_id={monitor_id_str} not found.")
+            # Parse FDV data
+            measurements = processor.parse_fdv(object_name, monitor_id=monitor_obj.id, interim=interim_str, start_time_str=start_time_str)
+            if not measurements:
+                return {"message": f"File parsing failed or no valid data: {file.filename}"}
+            await processor.insert_measurements(db, measurements)
+            return {"message": f"Successfully imported {len(measurements)} time series data."}
 
         else:
             raise HTTPException(

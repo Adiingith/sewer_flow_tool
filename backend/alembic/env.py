@@ -8,7 +8,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
-# 添加项目根目录到 Python 路径
+# add project root directory to Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 config = context.config
@@ -16,7 +16,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# 导入所有模型
+# import all models
 try:
     from backend.models.base import Base 
     
@@ -36,7 +36,7 @@ except ImportError as e:
     target_metadata = None
 
 def get_database_url():
-    """构建数据库连接URL - 使用同步驱动并处理特殊字符"""
+    """build database connection URL - use synchronous driver and handle special characters"""
     user = os.getenv('POSTGRES_USER')
     password = os.getenv('POSTGRES_PASSWORD')
     host = os.getenv('POSTGRES_HOST', 'postgres')
@@ -49,7 +49,7 @@ def get_database_url():
             "POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB"
         )
     
-    # URL 编码用户名和密码，处理特殊字符
+    # URL encode username and password, handle special characters
     encoded_user = quote_plus(user)
     encoded_password = quote_plus(password)
     

@@ -4,14 +4,14 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# 如果需要，可以在这里添加通用的模型方法
+# if needed, add common model methods here
 class BaseModel:
-    """基础模型类，提供通用方法"""
+    """Base model class, providing common methods"""
     
     def to_dict(self):
-        """将模型实例转换为字典"""
+        """Convert model instance to dictionary"""
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
     
     def __repr__(self):
-        """字符串表示"""
+        """String representation"""
         return f"<{self.__class__.__name__}(id={getattr(self, 'id', 'N/A')})>"

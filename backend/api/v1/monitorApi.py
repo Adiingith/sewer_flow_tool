@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-# 固定路径接口优先
+# fixed path interface first
 @router.get("/visualization/dashboard_summary", response_model=DashboardSummary, tags=["Monitors"])
 async def get_dashboard_summary(db: AsyncSession = Depends(get_session)):
     logger.info("Request received for dashboard summary.")
@@ -72,7 +72,7 @@ async def get_dashboard_summary(db: AsyncSession = Depends(get_session)):
     retain_count = int(summary.retain_count or 0)
     total_categorized = fm_count + dm_count + pl_count + rg_count
     other_count = total_monitors - total_categorized
-    # 统计各类别移除数
+    # count removal for each category
     fm_removal_count = await db.scalar(
         select(func.count(Monitor.id)).select_from(Monitor)
         .join(ActionResponsibility, Monitor.id == ActionResponsibility.monitor_id)
@@ -180,7 +180,7 @@ async def get_all_monitor_ids(db: AsyncSession = Depends(get_session)):
     logger.info(f"Found and returning {len(ids)} monitor IDs.")
     return ids
 
-# 参数路径接口最后，且参数名统一为 id
+# parameter path interface last, and parameter name is id
 @router.get("/monitors/{id}", response_model=MonitorSchema)
 async def get_monitor_details(id: int, db: AsyncSession = Depends(get_session)):
     logger.info(f"Request received for details of monitor ID: {id}")

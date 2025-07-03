@@ -25,3 +25,8 @@ psycopg2-binary
 openpyxl
 xlrd
 PyYAML
+mlflow
+onnx
+onnxruntime
+scikit-learn
+skl2onnx

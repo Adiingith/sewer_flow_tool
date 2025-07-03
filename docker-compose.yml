@@ -5,7 +5,8 @@ services:
       dockerfile: backend/Dockerfile
     container_name: backend
     ports:
-      - "8000:8000"
+      - "8000:8000"   # FastAPI
+      - "5000:5000"   # MLflow UI
     volumes:
       - ./backend:/app/backend
     env_file:
@@ -52,7 +53,7 @@ services:
     env_file:
       - ./frontend/.env
     environment:
-      - CHOKIDAR_USEPOLLING=true  # 解决 Vite 热更新在 Docker 中失效问题
+      - CHOKIDAR_USEPOLLING=true  
       # - REACT_APP_API_BASE=http://backend:8000
     restart: unless-stopped
     volumes:
@@ -73,7 +74,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}     
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./data:/docker-entrypoint-initdb.d  # ⬅️ 自动执行目录      
+      - ./data:/docker-entrypoint-initdb.d       
     restart: unless-stopped
 
   redis:
