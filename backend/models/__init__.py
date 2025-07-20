@@ -1,28 +1,28 @@
 """
-数据库模型模块
+database model module
 
-包含所有的 SQLAlchemy 模型类，用于定义数据库表结构和关系。
+contains all SQLAlchemy model classes, used to define database table structure and relationships.
 """
 
 from .base import Base
 from .measurement import Measurement
-from .StormEvent import StormEvent
-from .DryDayEvent import DryDayEvent
+from .weatherEvent import WeatherEvent
 from .monitor import Monitor
 from .WeeklyQualityCheck import WeeklyQualityCheck
 from .presiteInstallCheck import PresiteInstallCheck
 from .ActionResponsibility import ActionResponsibility
-# 导出所有模型类
+from .rain_gauge import RainGauge
+
 __all__ = [
     "Base",
     "Measurement",
-    "StormEvent",
-    "DryDayEvent",
+    "WeatherEvent",
     "Monitor",
     "WeeklyQualityCheck",
     "PresiteInstallCheck",
-    "ActionResponsibility"
+    "ActionResponsibility",
+    "RainGauge"
 ]
 
-# 确保所有模型都被导入，这样 Alembic 才能检测到它们
-# 这个导入顺序很重要，因为存在外键关系
+# ensure all models are imported, so Alembic can detect them
+# this import order is important, because there are foreign key relationships

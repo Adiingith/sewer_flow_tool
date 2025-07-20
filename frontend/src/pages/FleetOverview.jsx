@@ -84,7 +84,7 @@ function FleetOverview() {
                 width: d.width_mm,
                 shape: d.shape,
                 depth: d.depth_mm,
-                actioned: d.actioned || '', // if backend doesn't have, send empty string
+                action: d.action || '',
             }));
             setDevices(mappedData);
             setTotalPages(Math.ceil(data.total / data.limit));
@@ -104,7 +104,6 @@ function FleetOverview() {
   };
 
   const handleExportCSV = () => {
-    console.log('Export CSV data');
   };
 
   const handleSelectionChange = (newSelection) => {

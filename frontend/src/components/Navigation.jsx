@@ -81,7 +81,6 @@ export function TopNavBar() {
                   <button
                     className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     onClick={() => {
-                      console.log('Export data');
                       setOpenMenu(false);
                     }}
                   >
@@ -90,8 +89,8 @@ export function TopNavBar() {
                   <button
                     className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     onClick={() => {
-                      console.log('System settings');
                       setOpenMenu(false);
+                      window.location.href = '/settings';
                     }}
                   >
                     Settings
@@ -99,7 +98,6 @@ export function TopNavBar() {
                   <button
                     className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     onClick={() => {
-                      console.log('Help');
                       setOpenMenu(false);
                     }}
                   >

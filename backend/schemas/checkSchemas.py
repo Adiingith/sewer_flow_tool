@@ -1,4 +1,4 @@
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, validator, ConfigDict
 from typing import Optional, Any
 from datetime import datetime, date
 import json
@@ -22,8 +22,7 @@ class PresiteInstallCheckRead(PresiteInstallCheckBase):
     id: int
     checked_at: Optional[datetime] = None
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 # Weekly Quality Check Schemas
 class WeeklyQualityCheckBase(BaseModel):
@@ -33,6 +32,9 @@ class WeeklyQualityCheckBase(BaseModel):
     comments: Optional[Any] = None
     actions: Optional[Any] = None
     interim: Optional[str] = None
+    data_quality_check: Optional[str] = None
+    device_status: Optional[str] = None
+    device_status_reason: Optional[str] = None
 
 class WeeklyQualityCheckCreate(WeeklyQualityCheckBase):
     pass
@@ -43,24 +45,31 @@ class WeeklyQualityCheckUpdate(BaseModel):
     comments: Optional[Any] = None
     actions: Optional[Any] = None
     interim: Optional[str] = None
+    data_quality_check: Optional[str] = None
+    device_status: Optional[str] = None
+    device_status_reason: Optional[str] = None
 
 class WeeklyQualityCheckRead(WeeklyQualityCheckBase):
     id: int
     check_date: Optional[date] = None
     comments: Optional[str] = None
     actions: Optional[str] = None
+    data_quality_check: Optional[str] = None
+    device_status: Optional[str] = None
+    device_status_reason: Optional[str] = None
 
     @validator('comments', 'actions', pre=True)
     def json_to_string(cls, v):
+        if v is None:
+            return ""
         if isinstance(v, dict):
             try:
                 first_value = next(iter(v.values()))
-                return str(first_value)
+                return str(first_value) if first_value is not None else ""
             except StopIteration:
                 return ""
         if isinstance(v, list):
             return json.dumps(v)
-        return v
+        return str(v) if v is not None else ""
 
-    class Config:
-        orm_mode = True 
+    model_config = ConfigDict(from_attributes=True) 

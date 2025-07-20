@@ -1,0 +1,1679 @@
+monitor_id,interim,comment,classification,action_category
+FM01,Interim1,"Telemetry download. Poor data - depths all below 0.05m (some negative depths recorded). Velocities better but spiky data. No flows recorded in normal conditions and very minor storm response recorded.
+
+Alt: Any MH US or DS e.g. 8703 or 8801 US",bad_data_storm_response_failed,investigate_storm_failure
+FM02,Interim1,"No data until 09/08/2024. Data from 09/08/2024 seems ok, diurnal profile recorded. Flows responsive to rainfall. Scatter plot looks good. DWF seems low - possibly under-recorded.",bad_data,recommend_remove_or_relocate
+FM03,Interim1,Very low flows recorded in DWF (small catchment area upstream). Flows responsive to storms. Depth data tends to drift.,partial_good_data,partial_data_needs_review
+FM04,Interim1,Good data. Diurnal profile evident. Flows responsive to rainfall. Scatter plot looks good.,good_data,no_action_continue_monitoring
+FM05,Interim1,FM on secondary leg of bifurcation - no flow recorded. Tiny response to storm event.,partial_good_data,partial_data_needs_review
+FM06,Interim1,"Very poor data. No depths recorded until 09/08/24, and look unreliable after that. No velocities recorded in DWF. Contractor states ""Loose sensor cleaned and refitted to ring"".",bad_data,sensor_fault_or_ragging
+FM09,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM10,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM11,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM13,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM14,Interim1,Telemetry download. 4 days of data available. Very low flows - small catchment upstream. Small response to rainfall. Wide scatter. Unlikely to get better data elsewhere due to small u/s catchment.,partial_good_data,partial_data_needs_review
+FM15,Interim1,"Telemetry download. 4 days of data available. Low flows. Small response to rainfall. Wide scatter. U/S FM16 records much higher peak flows, however there is a CSO between the two.",partial_good_data,partial_data_needs_review
+FM16,Interim1,"Telemetry download. 4 days of data available. Minimal flows in DWF. Good storm response. Scatter plot looks reasonable. Peak flows significantly decrease at d/s FM15, however there is a CSO between the two.",partial_good_data,partial_data_needs_review
+FM17,Interim1,Telemetry download. 4 days of data available. Poor data for first 3 days. Velcoities and depths jump up on 08/08/24. Need more data to assess quality.,partial_good_data,partial_data_needs_review
+FM18,Interim1,Telemetry download. 4 days of data available. Located on spill pipe - no flows in DWF. Minor storm response on 05/08/2024,bad_data_storm_response_failed,investigate_storm_failure
+FM19,Interim1,Telemetry download. 4 days of data available. Data looks reasonable quality. Minimal DWF due to small u/s catchment but diurnal profile evident. Flows respond to rainfall.,partial_good_data,partial_data_needs_review
+FM20,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM21,Interim1,"Telemetry download. Good data quality. Clear diurnal profile and strong storm response. Close scatter with evidence of surchrage. Unable to check volume balance - data not available at u/s monitor, poor data at d/s monitor.",good_data,no_action_continue_monitoring
+FM22,Interim1,No data for 1.5 days at start. Depth data looks good following this. Velocity data drops out on 08/08/24. Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM23,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM24,Interim1,Telemetry download. Small upstream catchment. No / minimal flow recorded in DWF. Minor storm response.,bad_data_storm_response_failed,investigate_storm_failure
+FM25,Interim1,Data looks reasonable. Diurnal profile evident in DWF. Flows respond to rainfall. Medium scatter. Pump profile evident from 11/08/24.,partial_good_data,partial_data_needs_review
+FM26,Interim1,"Telemetry download. Depths look ok, velocities drop out in places. Diurnal profile evident in DWF. Flows respond to rainfall. Medium scatter. Pump profile evident in flow from 11/08/24. Volume balance with u/s FM24 and FM25 is ok for first storm but not for second due to data drop outs.",partial_good_data,partial_data_needs_review
+FM27,Interim1,Telemetry download. Data looks reasonable. Low flows in DWF. Good storm response. Close scatter.,partial_good_data,partial_data_no_action
+FM28,Interim1,Good data. Diurnal profile evident. Flows responsive to rainfall. Scatter plot looks good. Volume balance ok.,good_data,no_action_continue_monitoring
+FM29,Interim1,Telemetry download. 4 days of data available. Data looks reasonable quality. Diurnal profile evident in DWF. Good storm response. Medium scatter.,partial_good_data,partial_data_needs_review
+FM30,Interim1,"Telemetry download. 4 days of data available. Very low flows in DWF (relatively small u/s catchment). Some storm response. Generally quite poor data (outgoing pipe).
+
+Alt: Any MH DS, alts may be in gardens so possibly 0706 is best.",partial_good_data,partial_data_needs_review
+FM31,Interim1,Small u/s catchment. Minimal DWF recorded. Good storm response. Close scatter. ,partial_good_data,partial_data_no_action
+FM32,Interim1,"Poor data. Depths all below 0.06m. No DWF recorded. Some storm response. Scattergraph shows little to no correlation.
+
+Alt: No clear alt without missing flows from one of two incoming lines to installed MH. Would need 2nd FM to cover both lines.",bad_data_storm_response_failed,investigate_storm_failure
+FM33,Interim1,"Telemetry download. 4 days of data available. FM located on spill pipe - no DWF, minor storm response.",bad_data_storm_response_failed,investigate_storm_failure
+FM34,Interim1,"No data recorded for first 2 days. Velocity data shows diurnal profile and storm response. Depth data looks unreliable. Wide scatter.
+
+Alt: Numerous alts US and DS e.g. 9208 or 9201.",bad_data_storm_response_failed,investigate_storm_failure
+FM35,Interim1,Not provided.,partial_good_data,partial_data_needs_review
+FM37,Interim1,"Telemetry download. Poor data - messy - no evidence of diurnal profile or storm response. Located on outgoing pipe. Scatter plot shows no correlation.
+
+Alt: only 1no. MH as alt available 4109.",bad_data_storm_response_failed,investigate_storm_failure
+FM38,Interim1,Located d/s of SPS - pump profile evident. Good storm response. Data and scatter plot look good. Volume imbalance with d/s FM41,partial_good_data,partial_data_needs_review
+FM39,Interim1,"Fast flow. Poor data for first 3.5 days, including first storm event. Depths and volumes improve after second storm event. Located d/s of a PS - pump profile evident. Fairly close scatter plot for data after second storm event. Volume imbalance with d/s FM40. Flows reduce by about half during DWF.",bad_data,sensor_fault_or_ragging
+FM40,Interim1,Located d/s of SPS - pump profile evident. Evidence of diurnal profile. Good storm response. Close scatter. Volume imbalance with u/s FM39.,partial_good_data,partial_data_no_action
+FM41,Interim1,Located d/s of SPS - pump profile evident. Evidence of diurnal profile. Good storm response. Close scatter. Volume imbalance with u/s FM38.,partial_good_data,partial_data_no_action
+FM42,Interim1,Telemetry download. 4 days of data available. Good data. Close scatter. Diurnal profile evident and good storm response.,good_data,no_action_continue_monitoring
+FM43,Interim1,"Telemetry download. 4 days of data available. Depths look ok but no velocity data recorded. Installed in outgoing pipe.
+
+Alt: 1no. MH US 2401 otherwise use DS 1401 but they inlcude couple houses and potentially road.",partial_good_data,partial_data_needs_review
+FM44,Interim1,Good data. Very close scatter. Evidence of surcharge.,good_data,no_action_continue_monitoring
+FM45,Interim1,"Telemetry download. Good depth data, velocities affected by ragging in places. Evidence of diurnal profile and storm response.",bad_data,sensor_fault_or_ragging
+FM47,Interim1,"Telemetry download. 4 days of data available. Depths look ok but no velocity data recorded.
+
+Alt: no clear alt, only MHs DS that have incoming lines between.",partial_good_data,partial_data_needs_review
+FM48,Interim1,Telemetry download. 4 days of data available. Very low flows and depths. Reasonable scatter. Very small u/s catchment,partial_good_data,partial_data_needs_review
+FM49,Interim1,"Depths ok, velocities affected by ragging. Reasonable scatter. Diurnal profile and storm response evident.",bad_data,sensor_fault_or_ragging
+FM50,Interim1,Telemetry downloaded. Monitor located u/s of SPS - affected by on/off levels of pumps.,partial_good_data,partial_data_needs_review
+FM51,Interim1,Data quality looks good.Scattergraph looks good.Responsive to rainfall. Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM54,Interim1,Telemetry download. Flow monitor located on spill pipe.No flow recorded.Responsive to only one storm event.,partial_good_data,partial_data_needs_review
+FM55,Interim1,Very low flow conditions due to monitor location.Only very small catchment upstream.Responsive to only one storm event.,partial_good_data,partial_data_needs_review
+FM56,Interim1,Telemetry downloaded. Low flow conditions due to small catchment upstream.Responsive to only one storm event.,partial_good_data,partial_data_needs_review
+FM57,Interim1,Data quality looks good.Scattergraph looks good.Diurnal profile and storm response evident.Sensor cleaned from grease.,bad_data,sensor_fault_or_ragging
+FM58,Interim1,No data,bad_data,recommend_remove_or_relocate
+FM59,Interim1,"Says data downloaded, but none provided.",partial_good_data,partial_data_needs_review
+FM60,Interim1,"Telemetry download. Located on storm sewer, no flow in DWF. Data quality is good.Scattergraph looks reasonable.Good storm response.",bad_data_storm_response_failed,investigate_storm_failure
+FM61,Interim1,"Telemetry download. Very high velocity, very low depth. Depth and velocity data missing for first couple of days. No alternative sites.",partial_good_data,partial_data_needs_review
+FM62,Interim1,Flow monitor located on spill pipe.No flow recorded.,partial_good_data,partial_data_needs_review
+FM63,Interim1,Data looks good.Scattergraph looks reasonable.Diurnal profile is evident.Responsive to rainfall.,good_data,no_action_continue_monitoring
+FM64,Interim1,Data looks good.Diurnal profile is evident.Responsive to rainfall.,partial_good_data,partial_data_needs_review
+FM65,Interim1,"Poor data quality.Scattergraph looks good.Responsive to only one sorm event.
+Alt:D/S of 6003",bad_data,sensor_fault_or_ragging
+FM66,Interim1,Data looks good.Scattergraph looks good.diurnal profile is visible.Responsive to storm events.,good_data,no_action_continue_monitoring
+FM67,Interim1,No data ,bad_data,recommend_remove_or_relocate
+FM68,Interim1,Data looks good.Responsive to rainfall.Velocity drops down during storm events.Evidence of surcharge.,partial_good_data,partial_data_needs_review
+FM69,Interim1,"FM located on spill pipe - no DWF, minor storm response.",bad_data_storm_response_failed,investigate_storm_failure
+FM70,Interim1,Poor data.Velocity drops down to zero during DWF.Responsive to rainfall. Reinstalled into Pipe B,partial_good_data,partial_data_needs_review
+FM71,Interim1,Good data. Evidence of diurnal profile. Good storm response.,good_data,no_action_continue_monitoring
+FM72,Interim1,Located on bifurcation. No flow in DWF. Minimal flow in storm events.,partial_good_data,partial_data_needs_review
+FM73,Interim1,Good data.Responsive to storm events.Scattergraph looks reasonable.Sensor cleaned thoroughly from ragging,good_data,no_action_continue_monitoring
+FM74,Interim1,Telemetry download. Located on bifurcation. Very low flows during DWF. Some rainfall response.,partial_good_data,partial_data_needs_review
+FM75,Interim1,Data looks ok. Slow flow.Wide scatter.Diurnal profile is evident.Responsive to rainfall.Sensor cleaned thoroughly from ragging,bad_data,sensor_fault_or_ragging
+FM76,Interim1,Data looks ok. Steady flow.Diurnal profile is evident.Responsive to rainfall.Sensor cleaned thoroughly from ragging,bad_data,sensor_fault_or_ragging
+FM77,Interim1,Data looks good.Scattergraph looks good.diurnal profile is visible.Responsive to storm events.Sensor cleaned from ragging,good_data,no_action_continue_monitoring
+FM78,Interim1,Telemetry download - 4 days available. Minimal flow in DWF. Storm response evident. Located on outgoing pipe.,partial_good_data,partial_data_needs_review
+FM80,Interim1,Telemetry download - 4 days available. Reasonable data.Wide scatter.diurnal profile is visible.Responsive to rainfall.,partial_good_data,partial_data_needs_review
+FM81,Interim1,No velocity data and depth data in first couple of days. Good data following this.,good_data,no_action_continue_monitoring
+FM82,Interim1,No velocity data in the first couple of days. Good data following this.,good_data,no_action_continue_monitoring
+FM83,Interim1,Evidence of pumping station downstream.But none in asset plan or model.,partial_good_data,partial_data_needs_review
+FM84,Interim1,Evidence of pumping station downstream.But none in asset plan or model.,partial_good_data,partial_data_needs_review
+FM85,Interim1,DWF looks ok. Depth showing negative value during storm events.,partial_good_data,partial_data_needs_review
+FM86,Interim1,"No flow in DWF. Large storm response, but doesn't line up with rainfall - delayed by >1hr.",bad_data_storm_response_failed,investigate_storm_failure
+FM87,Interim1,"Poor data.Velocity drops down to zero. Slow flow and ragging.
+Alt:U/S and D/S of MH0604 ",bad_data,sensor_fault_or_ragging
+FM88,Interim1,Evidence of pumping station upstream.But none in asset plan or model.,partial_good_data,partial_data_needs_review
+FM90,Interim1,Telemetry download - Very low flows - small u/s catchment. Minor storm response.,bad_data_storm_response_failed,investigate_storm_failure
+FM91,Interim1,Telemetry download. diurnal profile visible. Scattergraph looks reasonable.No data recorded after 8/8/2024,bad_data,recommend_remove_or_relocate
+FM92,Interim1,No DWF recorded. Storm response.,bad_data_storm_response_failed,investigate_storm_failure
+FM93,Interim1,Telemetry download. No data except small storm response in first storm event.,bad_data_storm_response_failed,investigate_storm_failure
+FM94,Interim1,No data recorded in the first 4 days.Good data after this.,good_data,no_action_continue_monitoring
+FM95,Interim1,Pumped flow. data looks good.,partial_good_data,partial_data_needs_review
+FM96,Interim1,Telemetry download. Low depths and minimal velocities recorded. FM located in bifurcation.,partial_good_data,partial_data_needs_review
+FM97,Interim1,Telemetry download. Minimal velocities recorded. Surcharged depths in second storm event.,partial_good_data,partial_data_needs_review
+FM98,Interim1,Telemetry download. Data looks good.diurnal profile is evident.Flow responsive to rainfall.Scattergraph looks reasonable.No data recoded after 8/8/2024,good_data,no_action_continue_monitoring
+FM99,Interim1,Telemetry download. Minor DWF diurnal profile. Storm response.,bad_data_storm_response_failed,investigate_storm_failure
+FM100,Interim1,"Poor data up to 08/08/24, ok after this. Velocity drop out during second storm. Diurnal profile and storm response evident.",partial_good_data,partial_data_needs_review
+FM103,Interim1,"Telemetry downloaded. No velocities recorded in DWF. Storm response.
+Wide scatter.",bad_data_storm_response_failed,investigate_storm_failure
+FM104,Interim1,Okay,good_data,no_action_continue_monitoring
+FM105,Interim1,Okay,good_data,no_action_continue_monitoring
+FM106,Interim1,Okay,good_data,no_action_continue_monitoring
+FM107,Interim1,"Okay, few velocity sags but not major.",partial_good_data,partial_data_no_action
+FM108,Interim1,"Velocity data spikey throughout period, no DWF.
+Covers bifurcation, so DWF may go other route?
+Wide scatter.",partial_good_data,partial_data_needs_review
+FM110,Interim1,Okay,good_data,no_action_continue_monitoring
+FM111,Interim1,Okay,good_data,no_action_continue_monitoring
+FM112,Interim1,Okay,good_data,no_action_continue_monitoring
+FM114,Interim1,Okay,good_data,no_action_continue_monitoring
+FM115,Interim1,"Velocity issues at beginning of interim, impoved after first few days, however flows much less than expected - large upstream catchment.
+Records pumped flow from upstream.
+Scatter okay.",partial_good_data,partial_data_no_action
+FM116,Interim1,Velcities look strange. Review in next interim.,partial_good_data,partial_data_needs_review
+FM117,Interim1,Okay,good_data,no_action_continue_monitoring
+FM118,Interim1,"Good depth data. Velocity issues throughout, flows down to zero in DWF.
+On main trunk.
+Wide scatter.
+
+Alt: 3no. MHs DS, 2no MHs US misses small lateral but minor flow.",partial_good_data,partial_data_needs_review
+FM119,Interim1,Okay,good_data,no_action_continue_monitoring
+FM120,Interim1,Okay,good_data,no_action_continue_monitoring
+FM121,Interim1,"Telemetry download No depth or velocity data after first couple of days.
+Take several hosuing estate so should be sizable flow.
+Scatter okay.",partial_good_data,partial_data_no_action
+FM122,Interim1,Okay,good_data,no_action_continue_monitoring
+FM123,Interim1,"Okay, possibly some veloctiy drift present. Duirnal pattern presnt but small.
+Only takes few housing estate so expect small DWF.
+Scatter okay.",partial_good_data,partial_data_no_action
+FM124,Interim1,Okay,good_data,no_action_continue_monitoring
+FM125,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM126,Interim1,Okay,good_data,no_action_continue_monitoring
+FM127,Interim1,"Telemetry download. Velocity issues throughout.
+US of FM128 - vol balance issue.
+Wide scatter.
+Alt: Numerous MHs US and DS e.g. 6010, 6012",partial_good_data,partial_data_needs_review
+FM128,Interim1,Okay,good_data,no_action_continue_monitoring
+FM129,Interim1,"Telemetry download. No DWF at night. High spikey flows during day.
+Only takes few buidlings, trade?
+Wide scatter.",partial_good_data,partial_data_needs_review
+FM130,Interim1,"Telemetry download. No flows recorded during DWF. Storm response evident.
+DS of FM129, vol balance issue.
+Wide scatter.",bad_data_storm_response_failed,investigate_storm_failure
+FM131,Interim1,"Telemetry download. Depth data ok but no velocity data.
+Alt: DS MH 5202 incoming or US MHs but misses small lateral line",partial_good_data,partial_data_needs_review
+FM132,Interim1,Telemetry download. Low flows in DWF. Storm response recorded,partial_good_data,partial_data_needs_review
+FM133,Interim1,"Okay, veloctiy data spikey throughout period.
+Wide scatter.",partial_good_data,partial_data_no_action
+FM134,Interim1,"Okay, veloctiy data spikey throughout period.
+Wide scatter.",partial_good_data,partial_data_no_action
+FM135,Interim1,"No flow data for entire interim except during storm.
+Installed on high level bifurcation",partial_good_data,partial_data_needs_review
+FM136,Interim1,"No flow data for entire interim.
+
+Alt: only 1no. MH US 8091 with 2no. Incoming pipes so needs to be outgoing.",partial_good_data,partial_data_needs_review
+FM137,Interim1,"Veloctiy data only during rainfall periods.
+Takes flow from housing estate only so would expect much DWF.
+Wide scatter.",partial_good_data,partial_data_needs_review
+FM140,Interim1,Flows much lower than expected.,partial_good_data,partial_data_needs_review
+FM141,Interim1,Negative depths,partial_good_data,partial_data_needs_review
+FM142,Interim1,"Velocity data drops out several times.
+FM141 is okay DS.
+Scatter okay.",partial_good_data,partial_data_no_action
+FM143,Interim1,"Negative depth data.
+Foul pipe.
+
+Alt: Numerous DS MHs e.g. 1802, 1813",partial_good_data,partial_data_needs_review
+FM144,Interim1,"Okay, velocity drops out couple times but no major issues.
+Foul pipe.",partial_good_data,partial_data_no_action
+FM145,Interim1,"Okay. 
+Storm pipe",partial_good_data,partial_data_no_action
+FM146,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM147,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM148,Interim1,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM149,Interim1,"Okay, velocity and depth drop out at one point
+Flows small in DWF?",partial_good_data,partial_data_no_action
+FM150,Interim1,"Velocity issues throughout, no DWF
+
+Alt: 2no. MHs US. 4107 use incoming or outgoing. 4101 only use outgoing.",partial_good_data,partial_data_needs_review
+FM155,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM156,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM157,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM158,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM159,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM160,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM161,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM162,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM163,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+FM164,Interim1,FM not installed,bad_data,recommend_remove_or_relocate
+DM01,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+DM02,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+DM03,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL01,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL02,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL03,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL04,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL05,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL06,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL07,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL08,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+PL09,Interim1,No data retrieved,bad_data,recommend_remove_or_relocate
+RG01,Interim1,Data file empty - needs investigating,partial_good_data,partial_data_needs_review
+RG02,Interim1,"Rain Gauge visited, filter cleaned. All ok",partial_good_data,partial_data_needs_review
+RG03,Interim1,"Rain Gauge visited, filter cleaned. Unable to connect for test. Confirmed RG is calling in online
+Data look suspect compared to other RGs",partial_good_data,partial_data_needs_review
+RG04,Interim1,All okay - data downloaded,partial_good_data,partial_data_no_action
+RG05,Interim1,Unable to gain access. Locked gate,partial_good_data,partial_data_needs_review
+RG06,Interim1,Data file empty - needs investigating,partial_good_data,partial_data_needs_review
+RG07,Interim1,"Rain Gauge visited, filter cleaned. All ok",partial_good_data,partial_data_needs_review
+RG08,Interim1,"Rain Gauge visited, filter cleaned. All ok",partial_good_data,partial_data_needs_review
+RG09,Interim1,"Rain Gauge visited, filter cleaned. All ok",partial_good_data,partial_data_needs_review
+RG10,Interim1,Installed - no data for interim 1,bad_data,recommend_remove_or_relocate
+RG11,Interim1,No comms. Confirmed RG is offline. RG to be changed at next visit,partial_good_data,partial_data_needs_review
+RG12,Interim1,Installed - no data for interim 1,bad_data,recommend_remove_or_relocate
+RG13,Interim1,All okay - data downloaded,partial_good_data,partial_data_no_action
+RG14,Interim1,All okay - data downloaded,partial_good_data,partial_data_no_action
+RG15,Interim1,All okay - data downloaded,partial_good_data,partial_data_no_action
+RG16,Interim1,All okay - data downloaded,partial_good_data,partial_data_no_action
+FM01,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM02,Interim2,"Good data, close scatter, diurnal profile evident, storm response evident. ",good_data,no_action_continue_monitoring
+FM03,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM04,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM05,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM06,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM09,Interim2,"Good depth data, velocities regularly drop out. ",partial_good_data,partial_data_needs_review
+FM10,Interim2,"Good data, scatter and graphs show evidence of surcharging in storm events, diurnal profile evident, storm response evident. ",good_data,no_action_continue_monitoring
+FM11,Interim2,"Close scatter, good storm response. No flows recorded apart from in storm events (d/s of bifurcation - likely high level pipe)",bad_data_storm_response_failed,investigate_storm_failure
+FM13,Interim2,"Good storm response, no diurnal pattern observed due to standing water. Good scatter and volume balance.",bad_data_storm_response_failed,investigate_storm_failure
+FM14,Interim2,"Very low flows due to small catchment, small correlation on scatter graph. Response to rainfall. Ragging and low flows appear to have affected velocity. ",bad_data,sensor_fault_or_ragging
+FM15,Interim2,"Good data, diurnal profile evident and some storm response. Wide scatter.",good_data,no_action_continue_monitoring
+FM16,Interim2,Good scatter graph. Limited depth and flow storm response. Good diurnal and storm response in velocity. Good volume balance. ,partial_good_data,partial_data_needs_review
+FM17,Interim2,No flow or velocity data since previous download. ,partial_good_data,partial_data_needs_review
+FM18,Interim2,Located on spill pipe - flows only evident after storm event.,partial_good_data,partial_data_needs_review
+FM19,Interim2,Minimal DWF due to small US catchment but profile evident along with storm response. Good scatter. ,partial_good_data,partial_data_needs_review
+FM20,Interim2,"Storm response evident, no diurnal trend as on spill pipe of CSO. Good scatter.",bad_data_storm_response_failed,investigate_storm_failure
+FM21,Interim2,"Good data, good scatter, good volume balance. Diurnal profile and storm response, evidence of surcharge during storms. ",good_data,no_action_continue_monitoring
+FM22,Interim2,Storm response evident. Good depth data. Multiple velocity drop outs.,partial_good_data,partial_data_needs_review
+FM23,Interim2,Flow and velocity data dropped out. Depth data shows small amount of diurnal profile and storm response. ,partial_good_data,partial_data_needs_review
+FM24,Interim2,"Minimal DWF due to small US catchment, storm response evident. Medium scatter. ",partial_good_data,partial_data_needs_review
+FM25,Interim2,"Response to storms, some diurnal profile but pump profile evident mostly from 11/08 onwards. Good scatter",partial_good_data,partial_data_needs_review
+FM26,Interim2,"First half of data responds to storms, second half there is more evidence of diurnal flow and predominant pump profile evident. Good scatter",partial_good_data,partial_data_needs_review
+FM27,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM28,Interim2,Good data. Diurnal profile and storm response evident. Good scatter and volume balance. ,good_data,no_action_continue_monitoring
+FM29,Interim2,Good data. Diurnal profile and storm response evident. Good scatter and volume balance. ,good_data,no_action_continue_monitoring
+FM30,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM31,Interim2,"Minimal DWF due to small US catchment, storm response evident, good scatter. ",partial_good_data,partial_data_needs_review
+FM32,Interim2,"Poor data, Some small amounts of storm response but little DWF profile. Depths in negative numbers and poor scattergraph correlation. ",bad_data,sensor_fault_or_ragging
+FM33,Interim2,"Located on spill pipe - no DWF profile evident, some small storm response. ",bad_data_storm_response_failed,investigate_storm_failure
+FM34,Interim2,Diurnal profile evident and storm response. Scatter graph has wide spread. ,partial_good_data,partial_data_needs_review
+FM35,Interim2,Good velocity data. Depths recording negative values up until 18/08.,partial_good_data,partial_data_needs_review
+FM37,Interim2,Poor correlation on scatter. Some amount of diurnal profile but limited storm response. ,partial_good_data,partial_data_needs_review
+FM38,Interim2,"Pump profile evident, some storm response. Scatter plot good.",partial_good_data,partial_data_needs_review
+FM39,Interim2,"Pumped flow.Located d/s of SPS.Evidence of diurnal profile.Responsive to storm events.Scattergraph looks good. On 15/08, depths suddenly drop down.",partial_good_data,partial_data_needs_review
+FM40,Interim2,Pumped flow.Located d/s of SPS.Evidence of diurnal profile.Responsive to storm events. ,partial_good_data,partial_data_needs_review
+FM41,Interim2,Pumped flow.Located d/s of pumping station.Evidence of diurnal profile.Responsive to storm events.Close sactter.Volume imbalance with flow monitor u/s FM38,partial_good_data,partial_data_needs_review
+FM42,Interim2,Good data.Close scatter.Responsive to storm events.diurnal profile is evident.,good_data,no_action_continue_monitoring
+FM43,Interim2,Poor data.Velocity data was recorded for only two days during the survey. The rest of the days have no velocity data.Depth value drops to zero during one of the storm event.Depths drop out on 19/08.,partial_good_data,partial_data_needs_review
+FM44,Interim2,Good data.Very close scatter.Responsive to rainfall events.Evidence of surcharge.,good_data,no_action_continue_monitoring
+FM45,Interim2,Telemetry downloaded.Responsive to storm events.diurnal profile evident.Velocity affected by ragging in places.,bad_data,sensor_fault_or_ragging
+FM47,Interim2,Poor data.Depths look ok.Velocity values not recorded,partial_good_data,partial_data_needs_review
+FM48,Interim2,Telemetry downloaded.Flow is very low.Responsive to storm events.Very small u/s catchment.Sensor cleaned from grease.,bad_data,sensor_fault_or_ragging
+FM49,Interim2,Data looks good.Reasonable scatter.Responsive to storm avents.diurnal profile is evident.,good_data,no_action_continue_monitoring
+FM50,Interim2,Pumped flow.Monitor located u/s of SPS.,partial_good_data,partial_data_needs_review
+FM51,Interim2,Good data.Scattergraph looks good.Responsive to rainfall.diurnal profile is evident.Sensor clear but wiped anyway.,good_data,no_action_continue_monitoring
+FM54,Interim2,Telemetry downloaded.Flow monitor is located at spill pipe.Responsive to only on storm event.Velocity is showing negative values.,partial_good_data,partial_data_needs_review
+FM55,Interim2,Very low flow conditions. Only very small catchment area upstream. Responsive to only one storm event. Velocity drops to zero sometimes.,partial_good_data,partial_data_needs_review
+FM56,Interim2,"Site visit not completed, unable to download telemetry data. ",partial_good_data,partial_data_needs_review
+FM57,Interim2,Telemetry data downloaded.Good data.Scattergraph looks good.Dirunnal profile is evident and responsive to storm events.,good_data,no_action_continue_monitoring
+FM58,Interim2,Flow monitor located at one of the outgoing pipe of a bifurcation.No flow ,partial_good_data,partial_data_needs_review
+FM59,Interim2,Telemetry data downloaded.Data looks good.Located at outgoing leg of bifurcation.Responsive to rainfall.diurnal profile is evident.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM60,Interim2,Sensor cleaned thoroughly from ragging. Data downloaded.Data looks good.Located on storm sewer.No flow in DWF.Responsive to raoinfall.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM61,Interim2,Data downloaded.Very high velocity and low depth.Depth values drops below zero.Velocities repsond to rainfall but depths too low for accurate reading. No alternative sites.,partial_good_data,partial_data_needs_review
+FM62,Interim2,Flow monitor located at spill pipe.No flow recorded.,partial_good_data,partial_data_needs_review
+FM63,Interim2,Data looks good.Wide scatter.Responsive to storm avents.diurnal profile is evident.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM64,Interim2,Data looks ok.diurnal profile is evident.Responsive to rainfall.Close scatter.Sensor clear but wiped anyway.,partial_good_data,partial_data_no_action
+FM65,Interim2,Data looks ok.Scattergraph looks good.Depth value drops down multiple times.Gap in velicity recording.Responsive to few storm events.,partial_good_data,partial_data_needs_review
+FM66,Interim2,Data looks good.Scattergraph looks good.diurnal profile is evident.Responsive to storm events.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM67,Interim2,Poor data.Depth value drops to zero from the mid of flow survey period.Wide scatter.Responsive to rainfall.diurnal profile is evident.Sensor cleaned from grease.,bad_data,sensor_fault_or_ragging
+FM68,Interim2,Telemetry data downloaded.Data looks good.Responsive to rainfall.Velocity drops down during storm events.Evidence of surcharge.,partial_good_data,partial_data_needs_review
+FM69,Interim2,Flow monitor is located on spill pipe.No DWF.Monor response to storm events.Sensor cleaned thoroughly from ragging. Data downloaded.,bad_data,sensor_fault_or_ragging
+FM70,Interim2,"High velocities and very low depth (some negative). Poor velocity data until 13/08/24 but better after that. However, depth data is negative from 13/08/24 so no flows have been calculated.",partial_good_data,partial_data_needs_review
+FM71,Interim2,Good data.Evidence of diurnal profile.Good storm response.Scattergraph looks reasonable.Sensor cleaned thoroughly from ragging.,good_data,no_action_continue_monitoring
+FM72,Interim2,Located on bifurcation.Responsive to rainfall.No flow in DWF.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM73,Interim2,Good data.Responsive to storm events.diurnal profile is evident.Scattergraph looks reasonable.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM74,Interim2,Telemetry data downloaded.FM is located on bifurcation.Responsive to only one storm event.,partial_good_data,partial_data_needs_review
+FM75,Interim2,Data looks good.Slow flow.Scattergraph looks reasonable.diurnal profile is evident.Responsive to rainfall.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM76,Interim2,Telemetry data downloaded.Data looks good.diurnal profile is evident.Responsive to rainfall.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM77,Interim2,"Data looks ok.Sacttergraph looks good.diurnal profile is visible.Responsive to storm events.ensor removed, cleaned thoroughly from ragging and refitted.",bad_data,sensor_fault_or_ragging
+FM78,Interim2,Responses to rainfall but some negative depth values,partial_good_data,partial_data_needs_review
+FM80,Interim2,Some velocity drift but generally okay,partial_good_data,partial_data_no_action
+FM81,Interim2,Okay,good_data,no_action_continue_monitoring
+FM82,Interim2,Okay,good_data,no_action_continue_monitoring
+FM83,Interim2,"Okay. Velocity/depth no longer as irregular
+Steady flow, surchagred so sensor could not be cleaned",partial_good_data,partial_data_no_action
+FM84,Interim2,"Okay. Velocity/depth no longer as irregular
+Steady flow, surchagred so sensor could not be cleaned
+Few velocity drops but nothing major",partial_good_data,partial_data_no_action
+FM85,Interim2,"Data looks ok, some negative depth values.",partial_good_data,partial_data_needs_review
+FM86,Interim2,"No flow in DWF. Bifurcation US to FM85 which shows DWF, possible flow goes to FM85 in dry conditions. Peak flows still don't line up with rainfall.",partial_good_data,partial_data_needs_review
+FM87,Interim2,As per interim 1,partial_good_data,partial_data_needs_review
+FM88,Interim2,Veloctiy data sporadic but improvement from interim 1,partial_good_data,partial_data_needs_review
+FM90,Interim2,Data not retrieved.,bad_data,recommend_remove_or_relocate
+FM91,Interim2,Okay,good_data,no_action_continue_monitoring
+FM92,Interim2,"No DWF recorded. Storm response.
+Trickle flow.
+US FM91 has DWF, Bifurcation US to FM93 but no data for this FM",bad_data_storm_response_failed,investigate_storm_failure
+FM93,Interim2,"No velocity data for either interim. Possible that this is the secondary leg of the bifurcation upstream, hence no flows.",partial_good_data,partial_data_needs_review
+FM94,Interim2,Okay,good_data,no_action_continue_monitoring
+FM95,Interim2,Okay,good_data,no_action_continue_monitoring
+FM96,Interim2,"No DWF, step change in depth data, weak response to storms.
+Trickle flow, sensor heavily ragged - deep cleaned
+Numerous bifurcations US
+Wide scatter",partial_good_data,partial_data_no_action
+FM97,Interim2,"Velocity data only present between 15/08 - 20/08 - drifts towards end of this period.
+Slow flow, sensor cleaned from ragging
+Takes several housing estates and buisnesses
+Wide scatter.",bad_data,sensor_fault_or_ragging
+FM98,Interim2,No velocity data for interim 2,partial_good_data,partial_data_needs_review
+FM99,Interim2,Okay,good_data,no_action_continue_monitoring
+FM100,Interim2,Okay,good_data,no_action_continue_monitoring
+FM103,Interim2,"No velocities recorded in DWF. Storm response.
+Standing water. Sensor cleaned from silt
+Wide scatter.",bad_data,sensor_fault_or_ragging
+FM104,Interim2,Okay,good_data,no_action_continue_monitoring
+FM105,Interim2,Okay,good_data,no_action_continue_monitoring
+FM106,Interim2,Okay,good_data,no_action_continue_monitoring
+FM107,Interim2,Okay,good_data,no_action_continue_monitoring
+FM108,Interim2,As per interim 1,partial_good_data,partial_data_needs_review
+FM110,Interim2,Okay,good_data,no_action_continue_monitoring
+FM111,Interim2,Okay,good_data,no_action_continue_monitoring
+FM112,Interim2,Depth data looks unreliable.,partial_good_data,partial_data_needs_review
+FM114,Interim2,Okay,good_data,no_action_continue_monitoring
+FM115,Interim2,Unable to lift manhole cover,partial_good_data,partial_data_needs_review
+FM116,Interim2,"Few velocity sags but generally okay, responds to rainfall.
+Wide scatter",partial_good_data,partial_data_no_action
+FM117,Interim2,Okay,good_data,no_action_continue_monitoring
+FM118,Interim2,"As per interim 1.
+Slow flow, snesor cleaned from ragging. No suitable alternatives",bad_data,sensor_fault_or_ragging
+FM119,Interim2,Good data,good_data,no_action_continue_monitoring
+FM120,Interim2,Good data,good_data,no_action_continue_monitoring
+FM121,Interim2,Slow flow and ragging results in fairly poor data. Wide scatter.,bad_data,sensor_fault_or_ragging
+FM122,Interim2,Good data.,good_data,no_action_continue_monitoring
+FM123,Interim2,Ok considering small u/s catchment and low flows.,partial_good_data,partial_data_needs_review
+FM124,Interim2,Good data.,good_data,no_action_continue_monitoring
+FM125,Interim2,No depths recorded,partial_good_data,partial_data_needs_review
+FM126,Interim2,"Relatively small u/s catchment, so low DWF. Good storm response.",partial_good_data,partial_data_needs_review
+FM127,Interim2,Very poor data (steep pipe),bad_data,sensor_fault_or_ragging
+FM128,Interim2,Data ok.,partial_good_data,partial_data_needs_review
+FM129,Interim2,"Depth ok, velocities spiky. Very small u/s catchment so ok.",partial_good_data,partial_data_needs_review
+FM130,Interim2,"Depth ok, no velocity in DWF. Very small u/s catchment so ok.",partial_good_data,partial_data_needs_review
+FM131,Interim2,No velcoities recorded. No alternatives. Leave in for depths.,partial_good_data,partial_data_needs_review
+FM132,Interim2,Reasonable data.,partial_good_data,partial_data_needs_review
+FM133,Interim2,Data ok.,partial_good_data,partial_data_needs_review
+FM134,Interim2,Random spikes in velocity (up ot 6m/s) which don't correspond to rainfall,partial_good_data,partial_data_needs_review
+FM135,Interim2,No spills recorded.,partial_good_data,partial_data_needs_review
+FM136,Interim2,Very poor data,bad_data,sensor_fault_or_ragging
+FM137,Interim2,Good depth data. No velcoity data in DWF. Some storm response,bad_data_storm_response_failed,investigate_storm_failure
+FM138,Interim2,"Data looks ok, diurnal profile and storm response both evident.",partial_good_data,partial_data_needs_review
+FM139,Interim2,Data looks ok considering small u/s catchment. Scatter ok.,partial_good_data,partial_data_needs_review
+FM140,Interim2,Data ok.,partial_good_data,partial_data_needs_review
+FM141,Interim2,Negative depths,partial_good_data,partial_data_needs_review
+FM142,Interim2,Velocity issue due to ragging. Small u/s catchment and unlikely to be suitable alternative.,bad_data,sensor_fault_or_ragging
+FM143,Interim2,"Depth data improved from 15/08. However, depths still reduce during rainfall.",partial_good_data,partial_data_needs_review
+FM144,Interim2,Data looks ok.,partial_good_data,partial_data_needs_review
+FM145,Interim2,Storm pipe - good response.,partial_good_data,partial_data_needs_review
+FM146,Interim2,"Storm pipe, d/s of FM145. Good response.",partial_good_data,partial_data_needs_review
+FM147,Interim2,Good data,good_data,no_action_continue_monitoring
+FM148,Interim2,Storm pipe. Significant volume imbalance with u/s FM60.,partial_good_data,partial_data_needs_review
+FM149,Interim2,Data looks ok. Reasonable scatter.,partial_good_data,partial_data_needs_review
+FM150,Interim2,Poor data - low flows.,partial_good_data,partial_data_needs_review
+FM151,Interim2,Good data,good_data,no_action_continue_monitoring
+FM152,Interim2,Good data,good_data,no_action_continue_monitoring
+FM155,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM156,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM157,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM158,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM159,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM160,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM161,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM162,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM163,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+FM164,Interim2,FM not installed,bad_data,recommend_remove_or_relocate
+DM01,Interim2,Data Ok,partial_good_data,partial_data_needs_review
+DM02,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+DM03,Interim2,Depths drop out during storm events.,partial_good_data,partial_data_needs_review
+PL01,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL02,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL03,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL04,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL05,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL06,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL07,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL08,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+PL09,Interim2,No data retrieved,bad_data,recommend_remove_or_relocate
+RG01,Interim2,RG swapped - workshop to download data off old unit,partial_good_data,partial_data_needs_review
+RG02,Interim2,ok,good_data,no_action_continue_monitoring
+RG03,Interim2,Rainfall values much smaller than other monitors,partial_good_data,partial_data_needs_review
+RG04,Interim2,ok,good_data,no_action_continue_monitoring
+RG05,Interim2,ok,good_data,no_action_continue_monitoring
+RG06,Interim2,Couldn't get comms. Swapped RG.,partial_good_data,partial_data_needs_review
+RG07,Interim2,ok,good_data,no_action_continue_monitoring
+RG08,Interim2,ok,good_data,no_action_continue_monitoring
+RG09,Interim2,ok,good_data,no_action_continue_monitoring
+RG10,Interim2,Rainfall values much smaller than other monitors,partial_good_data,partial_data_needs_review
+RG11,Interim2,RG swapped - workshop to download data off old unit,partial_good_data,partial_data_needs_review
+RG12,Interim2,Awaiting data file,partial_good_data,partial_data_needs_review
+RG13,Interim2,ok,good_data,no_action_continue_monitoring
+RG14,Interim2,ok,good_data,no_action_continue_monitoring
+RG15,Interim2,ok,good_data,no_action_continue_monitoring
+RG16,Interim2,ok,good_data,no_action_continue_monitoring
+FM01,Interim3,Poor data - depths all below 0.05m (some negative depths recorded).No flow recorded in normal flow conditions.Velocity values are spiky.Wide scatter.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM02,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM03,Interim3,Data downloaded.Very low flow recorded in DWF.Responsive to storm events.Depth values drift upwards.,partial_good_data,partial_data_needs_review
+FM04,Interim3,Good data. Diurnal profile evident. Flows responsive to rainfall. Scatter plot looks good.Responsive to rainfall.Sensor cleaned from ragging,good_data,no_action_continue_monitoring
+FM05,Interim3,FM is located in secondary leg of bifurcation.Tiny amount of flow recorded during storm events.Sensor clear but wiped anyway,partial_good_data,partial_data_needs_review
+FM06,Interim3,Data downloaded.Poor data.No velocities recorded at DWF.Responsive to rainfall.Sensor cleared from debris and cleaned from grease.,partial_good_data,partial_data_needs_review
+FM09,Interim3,Telemetry data downloaded.Data looks good.Responsive to rainfall.Diurnal profile evident.Velocity drops down at some places.Velocity drops down at storm events.Evidence of surcharge.Scattergraph looks resonable.,good_data,no_action_continue_monitoring
+FM10,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM11,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM13,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM14,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM15,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM16,Interim3,Telemetry data downloaded.Poor data.Data drops down from 17/08/2021-22/08/2021 and from 27/08/2021.Limited storm response.Diurnal profile is evident.Wide scatter.Depth is showing negative values.,bad_data,sensor_fault_or_ragging
+FM17,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM18,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM19,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM20,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM21,Interim3,Telemetry data downloaded.Good  data.Scatter graph looks good.Diurnal profile and storm response.Velocity drops down during storm events.Evidence of surcharge.,partial_good_data,partial_data_needs_review
+FM22,Interim3,Velocity data drops at multiple times.Poor scatter.Depth data drops to zero multiple times.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM23,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM24,Interim3,Telemetry data downloaded.Data looks good.Minimal DWF due to small upstream area of the catchment.Responsive to stormn events.Evidence of diurnal profile.medium scatter.,good_data,no_action_continue_monitoring
+FM25,Interim3,Pumped flow.Responsive to storm events.No data from 27/08/2021.Scattergraph looks reasonable.Steady flow. Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM26,Interim3,Telemetry data downloaded.Pumped flow.Responsive to rainfall.Good scatter.,partial_good_data,partial_data_needs_review
+FM27,Interim3,Telemetry data downloaded.Data looks good.Low flows in DWF.Responsive to storm events.Diurnal profile s evident.,partial_good_data,partial_data_needs_review
+FM28,Interim3,Data looks good.Diurnal profile is evident.Scattergraph looks good.Responsive to storm events.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM29,Interim3,Telemetry data downloaded.Data looks good.Responsive to storm events.Diurnal profile is evident.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM30,Interim3,Very low flow recorded in DWF.Responsive to storm events.Depth values drift upwards.Sensor cleaned from ragging,bad_data,sensor_fault_or_ragging
+FM31,Interim3,Small upstream catchment.Minimal DWF recorded.Responsive to storm events.Scattergraph looks good.Sensor cleaned from ragging,bad_data,sensor_fault_or_ragging
+FM32,Interim3,Poor data.Depth data is showing negative values.Responsive to some storm events.Poor scattergraph.Sensor cleaned from ragging,bad_data,sensor_fault_or_ragging
+FM33,Interim3,FM is located in spill pipe.No DWF.Some storm response.Sensor clear but wiped anyway.,bad_data_storm_response_failed,investigate_storm_failure
+FM34,Interim3,Depth data showing negative values.Responsive to storm events.Diurnal profile is evident.Wide scatter.Sensor clear but wiped anyway.,partial_good_data,partial_data_needs_review
+FM35,Interim3,Telemetry data downloaded.Good velocity data.,partial_good_data,partial_data_needs_review
+FM37,Interim3,Telemetry data downloaded.Poor data.No storm respose.Some amount of diurnal profile.Poor scatter.,bad_data,sensor_fault_or_ragging
+FM38,Interim3,Pumped flow.No storm response.Wide scatter.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM39,Interim3,Pumped flow.Responsive to storm events.Depth showing negative values.Evidence of diurnal profile.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM40,Interim3,Pumped flow.Responsive to storm events.Good scatter.Evidence of diurnal profile.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM41,Interim3,Pumped flow.Responsive to some storm events.Volume imbalance with flow monitor u/s FM38.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM42,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM43,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM44,Interim3,Data looks good.Responsive to storm events.Evidence of surcharge.Scattergraph looks good.Sensor cleaned from ragging,good_data,no_action_continue_monitoring
+FM45,Interim3,Telemetry data downloaded.Responsive to storm events.Velocity affected by ragging in places.Evidence of diurnal profile.,bad_data,sensor_fault_or_ragging
+FM47,Interim3,Poor data.Velocity values are not recorded.Depth values looks ok.Sensor cleaned from silt.,bad_data,sensor_fault_or_ragging
+FM48,Interim3,Data downloaded.Flow is very low.Depth values are very low.Responsive to storm events.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM49,Interim3,Telemetry data downloaded.Data looks good.Responsive to storm events.Evidence of diurnal profile.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM50,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM51,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM54,Interim3,Spill pipe - responsive to two storm events across full period.,partial_good_data,partial_data_needs_review
+FM55,Interim3,Low flows - small u/s catchment.,partial_good_data,partial_data_needs_review
+FM56,Interim3,Reasonable data considering low flows (small u/s catchment),partial_good_data,partial_data_needs_review
+FM57,Interim3,Velocities dropped out towards end of interim - needs cleaning.,partial_good_data,partial_data_needs_review
+FM58,Interim3,No flow (bifurcation).,partial_good_data,partial_data_needs_review
+FM59,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM60,Interim3,Storm sewer. Good data.,good_data,no_action_continue_monitoring
+FM61,Interim3,"Poor - steep sewer. High velocities, low depths. No alternatives (all steep).",partial_good_data,partial_data_needs_review
+FM62,Interim3,Spill pipe - no flow.,partial_good_data,partial_data_needs_review
+FM63,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM64,Interim3,Data ok.,partial_good_data,partial_data_needs_review
+FM65,Interim3,Unable to download telemetry - site visit required.,bad_data,recommend_remove_or_relocate
+FM66,Interim3,Velocities appear to be affeted by ragging at the end of the survey period.,bad_data,sensor_fault_or_ragging
+FM67,Interim3,Velocities and depths have dropped out towards end of survey period.,partial_good_data,partial_data_needs_review
+FM68,Interim3,Reasonable data.,partial_good_data,partial_data_needs_review
+FM69,Interim3,Spill pipe - data looks ok.,partial_good_data,partial_data_needs_review
+FM70,Interim3,"Poor data (high velocity, low depth). No suitable alternative.",partial_good_data,partial_data_needs_review
+FM71,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM72,Interim3,Bifurcation. Flows recorded duirng heavy rainfall.,partial_good_data,partial_data_needs_review
+FM73,Interim3,Velocities dropped out towards end of interim - needs cleaning.,partial_good_data,partial_data_needs_review
+FM74,Interim3,Unable to access. Data looks ok considering low flows.,partial_good_data,partial_data_needs_review
+FM75,Interim3,Unable to access.,partial_good_data,partial_data_needs_review
+FM76,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM77,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM78,Interim3,Data ok considering low flows.,partial_good_data,partial_data_needs_review
+FM80,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM81,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM82,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM83,Interim3,"Data ok, evidence of significant surcharge.",partial_good_data,partial_data_needs_review
+FM84,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM85,Interim3,"Data ok, minimal storm response.",partial_good_data,partial_data_needs_review
+FM86,Interim3,Data still delayed when compared to rainfall.,partial_good_data,partial_data_needs_review
+FM87,Interim3,Poor data.,partial_good_data,partial_data_needs_review
+FM88,Interim3,Good data,good_data,no_action_continue_monitoring
+FM90,Interim3,Low flows - small u/s catchment. Data ok.,partial_good_data,partial_data_needs_review
+FM91,Interim3,Data ok.,partial_good_data,partial_data_needs_review
+FM92,Interim3,Bifurcation. Data ok.,partial_good_data,partial_data_needs_review
+FM93,Interim3,Bifurcation. Minor response to 1 rainfall event across survey period.,partial_good_data,partial_data_needs_review
+FM94,Interim3,Good data,good_data,no_action_continue_monitoring
+FM95,Interim3,Good data.,good_data,no_action_continue_monitoring
+FM96,Interim3,Poor data.,partial_good_data,partial_data_needs_review
+FM97,Interim3,Poor data.,partial_good_data,partial_data_needs_review
+FM98,Interim3,Poor data,partial_good_data,partial_data_needs_review
+FM99,Interim3,Good data,good_data,no_action_continue_monitoring
+FM100,Interim3,Good data. Evidence of surcharge.,good_data,no_action_continue_monitoring
+FM103,Interim3,"No velocities recorded in DWF. Storm response.
+Sensor Clear
+Wide scatter.",bad_data_storm_response_failed,investigate_storm_failure
+FM104,Interim3,Okay,good_data,no_action_continue_monitoring
+FM105,Interim3,Okay,good_data,no_action_continue_monitoring
+FM106,Interim3,Okay,good_data,no_action_continue_monitoring
+FM107,Interim3,Okay,good_data,no_action_continue_monitoring
+FM108,Interim3,poor velocity data due to slow flow,partial_good_data,partial_data_needs_review
+FM110,Interim3,Okay,good_data,no_action_continue_monitoring
+FM111,Interim3,Okay,good_data,no_action_continue_monitoring
+FM112,Interim3,"As per interim 2.
+Enviromontel response: manual depth checks required",partial_good_data,partial_data_needs_review
+FM114,Interim3,Okay,good_data,no_action_continue_monitoring
+FM115,Interim3,Data looks okay but would expect more flow?,partial_good_data,partial_data_no_action
+FM116,Interim3,Okay,good_data,no_action_continue_monitoring
+FM117,Interim3,Data drops out from 24/08 onwards,partial_good_data,partial_data_needs_review
+FM118,Interim3,Data drops out from 19/08 onwards,partial_good_data,partial_data_needs_review
+FM119,Interim3,Okay,good_data,no_action_continue_monitoring
+FM120,Interim3,Okay,good_data,no_action_continue_monitoring
+FM121,Interim3,As per interim 2.,partial_good_data,partial_data_needs_review
+FM122,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM123,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM124,Interim3,Okay,good_data,no_action_continue_monitoring
+FM125,Interim3,"Data drops out from 24/08 onwards
+Environmontel reposnse to interim 2: Incorrect depth units - sensor heavily ragged",partial_good_data,partial_data_needs_review
+FM126,Interim3,Okay,good_data,no_action_continue_monitoring
+FM127,Interim3,"As per interim 2.
+No response from Environmontel in query sheet",partial_good_data,partial_data_needs_review
+FM128,Interim3,Okay,good_data,no_action_continue_monitoring
+FM129,Interim3,As per interim 2. Okay,partial_good_data,partial_data_no_action
+FM130,Interim3,As per interim 2. Okay,partial_good_data,partial_data_no_action
+FM131,Interim3,"As per interim 2. Okay
+Environmontel reponse: Silty slow flow, can try offset",partial_good_data,partial_data_no_action
+FM132,Interim3,Okay,good_data,no_action_continue_monitoring
+FM133,Interim3,Okay,good_data,no_action_continue_monitoring
+FM134,Interim3,"As per interim 2.
+No response from Environmontel in query sheet",partial_good_data,partial_data_needs_review
+FM135,Interim3,"Okay. No flow data for entire interim except during storm.
+Installed on high level bifurcation",partial_good_data,partial_data_no_action
+FM136,Interim3,"As per interim 2.
+Environmontel reponse: Silty slow flow, can try offset",partial_good_data,partial_data_needs_review
+FM137,Interim3,"As per interim 2.
+Environmontel reponse: Silty slow flow, can try offset",partial_good_data,partial_data_needs_review
+FM138,Interim3,Okay,good_data,no_action_continue_monitoring
+FM139,Interim3,Okay,good_data,no_action_continue_monitoring
+FM140,Interim3,Okay,good_data,no_action_continue_monitoring
+FM141,Interim3,Negative depths,partial_good_data,partial_data_needs_review
+FM142,Interim3,"As per interim 2.
+Environmontel reponse: Silty slow flow, can try offset",partial_good_data,partial_data_needs_review
+FM143,Interim3,"Depth data still suspect
+No response from Environmontel in query sheet",partial_good_data,partial_data_needs_review
+FM144,Interim3,Okay,good_data,no_action_continue_monitoring
+FM145,Interim3,"Data drops out from 24/08 onwards when rainfall recorded
+Much less vol than DS FM146",partial_good_data,partial_data_needs_review
+FM146,Interim3,Okay,good_data,no_action_continue_monitoring
+FM147,Interim3,Okay,good_data,no_action_continue_monitoring
+FM148,Interim3,"As per interim 2.
+No response from Environmontel in query sheet",partial_good_data,partial_data_needs_review
+FM149,Interim3,Okay,good_data,no_action_continue_monitoring
+FM150,Interim3,"As per interim 2.
+Environmontel reponse: Sensor deep cleaned 22/08 - see site sheet photos",partial_good_data,partial_data_needs_review
+FM151,Interim3,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM152,Interim3,Okay,good_data,no_action_continue_monitoring
+FM153,Interim3,N/A - Installed,partial_good_data,partial_data_needs_review
+FM154,Interim3,N/A - Installed,partial_good_data,partial_data_needs_review
+FM155,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM156,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM157,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM158,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM159,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM160,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM161,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM162,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM163,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+FM164,Interim3,FM not installed,bad_data,recommend_remove_or_relocate
+DM01,Interim3,Data OK,partial_good_data,partial_data_needs_review
+DM02,Interim3,No data since 27/08,bad_data,recommend_remove_or_relocate
+DM03,Interim3,Some data drop out - pump operation levels changed or DM issue,partial_good_data,partial_data_needs_review
+RG01,Interim3,No data received,bad_data,recommend_remove_or_relocate
+RG02,Interim3,OK,good_data,no_action_continue_monitoring
+RG03,Interim3,Rainfall values much smaller than other monitors,partial_good_data,partial_data_needs_review
+RG04,Interim3,OK,good_data,no_action_continue_monitoring
+RG05,Interim3,OK,good_data,no_action_continue_monitoring
+RG06,Interim3,No data received,bad_data,recommend_remove_or_relocate
+RG07,Interim3,OK,good_data,no_action_continue_monitoring
+RG08,Interim3,OK,good_data,no_action_continue_monitoring
+RG09,Interim3,OK,good_data,no_action_continue_monitoring
+RG10,Interim3,OK,good_data,no_action_continue_monitoring
+RG11,Interim3,No data - RG failure?,bad_data,recommend_remove_or_relocate
+RG12,Interim3,OK,good_data,no_action_continue_monitoring
+RG13,Interim3,OK,good_data,no_action_continue_monitoring
+RG14,Interim3,OK,good_data,no_action_continue_monitoring
+RG15,Interim3,OK,good_data,no_action_continue_monitoring
+RG16,Interim3,OK,good_data,no_action_continue_monitoring
+FM01,Interim4,"Poor data, wide scatter. Very low readings of flow velocity and depth (often below 0.05m). No recorded data since the early hours of the 4th Sept",bad_data,sensor_fault_or_ragging
+FM02,Interim4,"Good data, diurnal profile and storm response evident. Close scatter",good_data,no_action_continue_monitoring
+FM03,Interim4,Site visit required - unit does not dial in through the internet. No data since 30th August,bad_data,recommend_remove_or_relocate
+FM04,Interim4,Good data. Diurnal profile evident. Flows responsive to rainfall. Scatter plot looks good.Responsive to rainfall.Sensor cleaned from ragging,good_data,no_action_continue_monitoring
+FM05,Interim4,Small amount of flow during storm events. Sensor cleaned. Wide scatter,bad_data,sensor_fault_or_ragging
+FM06,Interim4,No velocity recorded during DWF. Responds to rainfall,partial_good_data,partial_data_needs_review
+FM09,Interim4,Telemetry data downloaded.Data looks good.Responsive to rainfall.Diurnal profile evident.Velocity drops down at some places.Velocity drops down at storm events.Evidence of surcharge.Scattergraph looks resonable. No data past 2nd sept due to download?,good_data,no_action_continue_monitoring
+FM10,Interim4,"Good data, scatter and graphs show evidence of surcharging in storm events, diurnal profile evident, storm response evident. No data beyond 2nd Sept due to download?",good_data,no_action_continue_monitoring
+FM11,Interim4,"Close scatter, good storm response. No flows recorded apart from in storm events (d/s of bifurcation - likely high level pipe). No data beyond 2nd sept due to download?",bad_data_storm_response_failed,investigate_storm_failure
+FM13,Interim4,"Good storm response, no diurnal pattern observed due to standing water. Good scatter and volume balance. Good storm response. No data beyond 2nd sept due to download?",bad_data_storm_response_failed,investigate_storm_failure
+FM14,Interim4,No readings beyond 22nd August,partial_good_data,partial_data_needs_review
+FM15,Interim4,No readings beyond 22nd August,partial_good_data,partial_data_needs_review
+FM16,Interim4,Data Ok. Diurnal profile evident and storm response. Depth still shows negative values. SCatter ok. ,partial_good_data,partial_data_needs_review
+FM17,Interim4,Data Ok. Diurnal profile evident and storm response. Depth still shows negative values. SCatter ok. ,partial_good_data,partial_data_needs_review
+FM18,Interim4,No data since 22nd Aug,bad_data,recommend_remove_or_relocate
+FM19,Interim4,No data since 22nd Aug,bad_data,recommend_remove_or_relocate
+FM20,Interim4,"Storm response evident, no diurnal trend as on spill pipe of CSO. Good scatter.",bad_data_storm_response_failed,investigate_storm_failure
+FM21,Interim4,"Good data, good scatter, good volume balance. Diurnal profile and storm response, evidence of surcharge during storms. ",good_data,no_action_continue_monitoring
+FM22,Interim4,Velocity data drops at multiple times.Poor scatter.Depth data drops to zero multiple times.Sensor cleaned. Storm response,bad_data,sensor_fault_or_ragging
+FM23,Interim4,"Drift in flow and velocity data. Storm response evident, some diurnal pattern. No data since 2nd Sept, times appear wrong in sensor (also in site notes). ",bad_data_storm_response_failed,investigate_storm_failure
+FM24,Interim4,Diurnal profile and storm response evident. Ok scatter. Very low volumes and depths due to small US catchment,partial_good_data,partial_data_needs_review
+FM25,Interim4,No data since 2nd sept. Storm response evident. Good scatter,bad_data_storm_response_failed,investigate_storm_failure
+FM26,Interim4,Diurnal profile and storm response evident. Scatter ok.,partial_good_data,partial_data_needs_review
+FM27,Interim4,Diurnal profile and storm response evident. Scatter ok.,partial_good_data,partial_data_needs_review
+FM28,Interim4,Data looks good.Diurnal profile is evident.Scattergraph looks good.Responsive to storm events.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM29,Interim4,Telemetry data downloaded.Data looks good.Responsive to storm events.Diurnal profile is evident.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM30,Interim4,No data since 29th August,bad_data,recommend_remove_or_relocate
+FM31,Interim4,Small upstream catchment.Minimal DWF recorded.Responsive to storm events.Scattergraph looks good.Sensor cleaned from ragging,bad_data,sensor_fault_or_ragging
+FM32,Interim4,Poor data.Depth data is showing negative values.Responsive to some storm events.Poor scattergraph.Sensor cleaned from ragging,bad_data,sensor_fault_or_ragging
+FM33,Interim4,FM is located in spill pipe.No DWF.Some storm response,bad_data_storm_response_failed,investigate_storm_failure
+FM34,Interim4,Depth data showing negative values.Responsive to storm events.Diurnal profile is evident.Wide scatter.Sensor cleaned from ragging,bad_data,sensor_fault_or_ragging
+FM35,Interim4,"Good data, depth data seems to have improved and is no longer negative. Good scatter",good_data,no_action_continue_monitoring
+FM37,Interim4,Poor correlation on scatter. Some amount of diurnal profile but limited storm response. Pronounced response to most recent storm likely resultant from exceptional conditions (high tide and significant storm),bad_data_storm_response_failed,investigate_storm_failure
+FM38,Interim4,Pumped flow. Some storm response on larger storms.Wide scatter.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM39,Interim4,No normal data since 28th August,partial_good_data,partial_data_needs_review
+FM40,Interim4,Pumped flow.Responsive to storm events.Good scatter.Evidence of diurnal profile.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM41,Interim4,"Pumped flow, small response to storm events. Possible volume imbalance with US monitor FM38. Cleaned from ragging",bad_data,sensor_fault_or_ragging
+FM42,Interim4,No data since 22nd Aug,bad_data,recommend_remove_or_relocate
+FM43,Interim4,Very poor data quality. No trends evident. Notes of silt and incorrect time. ,bad_data,sensor_fault_or_ragging
+FM44,Interim4,"Good data, diurnal patter and storm response evident. Evidence of surcharge in storm events. No checks completed.",good_data,no_action_continue_monitoring
+FM45,Interim4,"Diurnal pattern evident, responsive to storm events. Possible surcharge",partial_good_data,partial_data_needs_review
+FM47,Interim4,"Poor data quality, no flow or velocity data. Seem to be steps in depth data too. ",partial_good_data,partial_data_needs_review
+FM48,Interim4,Flow and depth values very low. Evidence of diurnal profile and response to storm events. Good scatter,partial_good_data,partial_data_needs_review
+FM49,Interim4,Good data and scatter graph. Dirunal profile and reponse to storm events,good_data,no_action_continue_monitoring
+FM50,Interim4,No data since 20th August,bad_data,recommend_remove_or_relocate
+FM51,Interim4,Good data.Sensor claned from ragging,good_data,no_action_continue_monitoring
+FM54,Interim4,FM located on spill pipe.Depth showing negative values.Responsive to only few storm events.,partial_good_data,partial_data_needs_review
+FM55,Interim4,Very low flows.Small upstream catchment.Minor storm response.No data after 04/09/2024.Depth showing negative values.Sensor cleared of ragging,bad_data,sensor_fault_or_ragging
+FM56,Interim4,Small u/s catchment.Low flows.Few storm responses.No data after 05/09/2024,bad_data_storm_response_failed,investigate_storm_failure
+FM57,Interim4,Responsive to storm events.Diurnal profile is evident.Sensor cleared of ragging.Velocity and depth data drops out from 05/09/2024.,bad_data,sensor_fault_or_ragging
+FM58,Interim4,No flow(bifurcation),partial_good_data,partial_data_needs_review
+FM59,Interim4,Data looks good.Responsive to rainfall events.Diurnal profile is evident.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM60,Interim4,Storm sewer.No DWF.Responsive to rainfall.Data drop out from 30/08/2024.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM61,Interim4,Poor data.High velocities and low depth value.Depth value drops below zero.Few storm responses.,partial_good_data,partial_data_needs_review
+FM62,Interim4,FM in located at spill pipe.No flow.,partial_good_data,partial_data_needs_review
+FM63,Interim4,Good data.Responsive to storm events.Diurnal profile is evident.No data from 04/09/2023.Sensor cleaned from ragging.,good_data,no_action_continue_monitoring
+FM64,Interim4,Data looks ok.Few storm responses.Depth data drops below zero.Data drops from 04/09/2024.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM65,Interim4,Data looks ok.Responsive to storm events.Depth value drops below zero multiple times.,partial_good_data,partial_data_needs_review
+FM66,Interim4,.Responsive to storm events.Velocity and depths have dropped out towards the end of flow survey.Sensor cleared from grease.,partial_good_data,partial_data_needs_review
+FM67,Interim4,Poor data.Velocities and depths have dropped out towards the end of survey period.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM68,Interim4,Data looks ok.Evidence of surcharge.Depth values drops below zero.Responsive to storm events.,partial_good_data,partial_data_needs_review
+FM69,Interim4,FM located on spill pipe.Data looks ok.Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM70,Interim4,Poor data.High velocity and low depths.Data drops out at mutliple times.,partial_good_data,partial_data_needs_review
+FM71,Interim4,Data looks good.Responsive to storm events.Diurnal profile is evident.Data drops out from 04/09/2024.,partial_good_data,partial_data_needs_review
+FM72,Interim4,FM located at bifurcation.Storm responsive to heavy storms.No flow in DWF.,partial_good_data,partial_data_needs_review
+FM73,Interim4,Data looks good.Responsive to storm events.Velocity drop out at the end of flow survey period(from 04/09/2024).,partial_good_data,partial_data_needs_review
+FM74,Interim4,FM located at bifurcation.Low flows.Data looks ok.,partial_good_data,partial_data_needs_review
+FM75,Interim4,Data looks good.Slow flow.Responsive to storm events.Diurnal profile is evident.Scattergraph looks good.Velocity drops out from 04/09/2024.,good_data,no_action_continue_monitoring
+FM76,Interim4,Good data,good_data,no_action_continue_monitoring
+FM77,Interim4,Good data.Responsive to storm events and evidence of diurnal profile.Data drops out from 04/09/2024,good_data,no_action_continue_monitoring
+FM78,Interim4,Responsive to rainfall events.Some negative depth values.,partial_good_data,partial_data_needs_review
+FM80,Interim4,Good data.,good_data,no_action_continue_monitoring
+FM81,Interim4,Good data.Velocity drops out after 04/09/2024.,good_data,no_action_continue_monitoring
+FM82,Interim4,Good data,good_data,no_action_continue_monitoring
+FM83,Interim4,Data looks ok.Evidence of surcharge.,partial_good_data,partial_data_needs_review
+FM84,Interim4,Good data.Velocity drop out after 04/09/2024.,good_data,no_action_continue_monitoring
+FM85,Interim4,Poor data.Negative depth values.Minor storm response.Velocity drops out.,bad_data_storm_response_failed,investigate_storm_failure
+FM86,Interim4,Low flow in DWF.Delayed storm response.No data recorded after 05/09/2024.,bad_data_storm_response_failed,investigate_storm_failure
+FM87,Interim4,Poor data - depth only site due to no alternatives (unable to relocate to spill pipe due to screen),partial_good_data,partial_data_needs_review
+FM88,Interim4,Data looks ok..Velocity values looks uneven.,partial_good_data,partial_data_needs_review
+FM90,Interim4,Site visit required,bad_data,recommend_remove_or_relocate
+FM91,Interim4,Data looks ok.Negative depth values and there is gap in velocity data.,partial_good_data,partial_data_needs_review
+FM92,Interim4,Data looks ok.,partial_good_data,partial_data_needs_review
+FM93,Interim4,FM located on bifurcation.Minor storm response.,bad_data_storm_response_failed,investigate_storm_failure
+FM94,Interim4,Good data.,good_data,no_action_continue_monitoring
+FM95,Interim4,Pumped flow.Data looks good.,partial_good_data,partial_data_needs_review
+FM96,Interim4,Poor data,partial_good_data,partial_data_needs_review
+FM97,Interim4,Poor data - depth only site,partial_good_data,partial_data_needs_review
+FM98,Interim4,Poor data,partial_good_data,partial_data_needs_review
+FM99,Interim4,Data looks good.,partial_good_data,partial_data_needs_review
+FM100,Interim4,Good data .Evidence of surcharge.,good_data,no_action_continue_monitoring
+FM103,Interim4,"No velocities recorded in DWF. Storm response.
+Sensor Cleaned
+Wide scatter.
+No alternatives, on trunk, leave in for depth readings",bad_data,sensor_fault_or_ragging
+FM104,Interim4,Okay,good_data,no_action_continue_monitoring
+FM105,Interim4,Okay,good_data,no_action_continue_monitoring
+FM106,Interim4,Okay,good_data,no_action_continue_monitoring
+FM107,Interim4,Okay,good_data,no_action_continue_monitoring
+FM108,Interim4,"poor velocity data due to slow flow. Storm Response.
+Environmontel response: poor site with very low flows
+Sensor Cleaned.
+Leave in for depth readings.",bad_data,sensor_fault_or_ragging
+FM110,Interim4,Okay,good_data,no_action_continue_monitoring
+FM111,Interim4,Okay,good_data,no_action_continue_monitoring
+FM112,Interim4,Being relocated,partial_good_data,partial_data_needs_review
+FM114,Interim4,Okay,good_data,no_action_continue_monitoring
+FM115,Interim4,"Data looks okay but would expect more flow, FM114 Vol (DS monitor) = 78,000, FM115 = 10,000",partial_good_data,partial_data_no_action
+FM116,Interim4,Okay,good_data,no_action_continue_monitoring
+FM117,Interim4,Okay,good_data,no_action_continue_monitoring
+FM118,Interim4,"Velocity drops outs few times towards end of interim
+sensor cleaned
+Wide scatter.
+Weekly cleaning - leave in for depth only.",bad_data,sensor_fault_or_ragging
+FM119,Interim4,Okay,good_data,no_action_continue_monitoring
+FM120,Interim4,Okay,good_data,no_action_continue_monitoring
+FM121,Interim4,"Velocity looks okay but low flows, would expect more.
+Wide Scatter",partial_good_data,partial_data_no_action
+FM122,Interim4,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM123,Interim4,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM124,Interim4,Okay,good_data,no_action_continue_monitoring
+FM125,Interim4,"No velocity data
+
+Environmontel response: Sensor cleared from ragging and come off ring during last week site visit. Visited 04/09 and data looks better.",bad_data,sensor_fault_or_ragging
+FM126,Interim4,Okay,good_data,no_action_continue_monitoring
+FM127,Interim4,"Vol balance issue, being relocated as of 26/08?",partial_good_data,partial_data_needs_review
+FM128,Interim4,Okay,good_data,no_action_continue_monitoring
+FM129,Interim4,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM130,Interim4,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM131,Interim4,"Poor data, no velocity for most of interim
+Environmontel Response: Large amount of silt upstream which silts up when cleaning. To be visited to offset.",partial_good_data,partial_data_needs_review
+FM132,Interim4,Okay,good_data,no_action_continue_monitoring
+FM133,Interim4,Okay,good_data,no_action_continue_monitoring
+FM134,Interim4,"Random spikes in velocity
+Environmontel Response: Investigating",partial_good_data,partial_data_needs_review
+FM135,Interim4,"Okay. No flow data for entire interim except during storm.
+Installed on high level bifurcation
+Dry pipe",partial_good_data,partial_data_no_action
+FM136,Interim4,"As per previous interims.
+Environmontel reponse: No alts, to be removd",partial_good_data,partial_data_needs_review
+FM137,Interim4,"As per previous interims.
+Environmontel reponse: No alts, to be removd",partial_good_data,partial_data_needs_review
+FM138,Interim4,Okay,good_data,no_action_continue_monitoring
+FM139,Interim4,Okay,good_data,no_action_continue_monitoring
+FM140,Interim4,Okay,good_data,no_action_continue_monitoring
+FM141,Interim4,"As per previous interims.
+Environmontel reponse: No alts, to be removd",partial_good_data,partial_data_needs_review
+FM142,Interim4,"As per previous interims.
+Environmontel reponse: No alts, to be removd",partial_good_data,partial_data_needs_review
+FM143,Interim4,"Some Depth data still suspect
+No response from Environmontel in query sheet.
+FM to be removed.",bad_data,recommend_remove_or_relocate
+FM144,Interim4,Okay,good_data,no_action_continue_monitoring
+FM145,Interim4,"As per previous interims.
+Environmontel reponse: No alts, to be removd",partial_good_data,partial_data_needs_review
+FM146,Interim4,Okay,good_data,no_action_continue_monitoring
+FM147,Interim4,Okay,good_data,no_action_continue_monitoring
+FM148,Interim4,"As per previous interims.
+Environmontel reponse: to be removd",partial_good_data,partial_data_needs_review
+FM149,Interim4,Okay,good_data,no_action_continue_monitoring
+FM150,Interim4,"As per previous interims.
+Environmontel reponse: to be removd",partial_good_data,partial_data_needs_review
+FM151,Interim4,Okay,good_data,no_action_continue_monitoring
+FM152,Interim4,Okay,good_data,no_action_continue_monitoring
+FM153,Interim4,"Data okay, velocities drop out during low flows",partial_good_data,partial_data_no_action
+FM154,Interim4,Okay,good_data,no_action_continue_monitoring
+FM155,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM156,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM157,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM158,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM159,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM160,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM161,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM162,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM163,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+FM164,Interim4,FM not installed,bad_data,recommend_remove_or_relocate
+DM01,Interim4,Data OK,partial_good_data,partial_data_needs_review
+DM02,Interim4,No data since 27/08 - site visit planned for 9th Sept,bad_data,recommend_remove_or_relocate
+DM03,Interim4,Data drop out and erratic - pump operation levels changed or DM issue,partial_good_data,partial_data_needs_review
+RG01,Interim4,No data received,bad_data,recommend_remove_or_relocate
+RG02,Interim4,OK,good_data,no_action_continue_monitoring
+RG03,Interim4,Rainfall values much smaller than other monitors,partial_good_data,partial_data_needs_review
+RG04,Interim4,OK,good_data,no_action_continue_monitoring
+RG05,Interim4,OK,good_data,no_action_continue_monitoring
+RG06,Interim4,No data received,bad_data,recommend_remove_or_relocate
+RG07,Interim4,OK,good_data,no_action_continue_monitoring
+RG08,Interim4,OK,good_data,no_action_continue_monitoring
+RG09,Interim4,OK,good_data,no_action_continue_monitoring
+RG10,Interim4,OK,good_data,no_action_continue_monitoring
+RG11,Interim4,OK,good_data,no_action_continue_monitoring
+RG12,Interim4,OK,good_data,no_action_continue_monitoring
+RG13,Interim4,OK,good_data,no_action_continue_monitoring
+RG14,Interim4,OK,good_data,no_action_continue_monitoring
+RG15,Interim4,OK,good_data,no_action_continue_monitoring
+RG16,Interim4,OK,good_data,no_action_continue_monitoring
+FM01,Interim5,"As per previous interim
+Trickle flow
+Enviromonetel Response: 2 man crew this week - manual checks to take place next week",partial_good_data,partial_data_no_action
+FM02,Interim5,Okay,good_data,no_action_continue_monitoring
+FM03,Interim5,"No Data
+
+Enviromontel Response: Monitor to be swapped on site this week",bad_data,recommend_remove_or_relocate
+FM04,Interim5,"Okay
+Steady flow, sensor cleaned from ragging and grease. ",bad_data,sensor_fault_or_ragging
+FM05,Interim5,Trickle flow. Responds during storm events. Wide scatter,partial_good_data,partial_data_no_action
+FM06,Interim5,"Okay. Slow flow, sensor cleaned from ragging",bad_data,sensor_fault_or_ragging
+FM09,Interim5,No Data.,bad_data,recommend_remove_or_relocate
+FM10,Interim5,No Data.,bad_data,recommend_remove_or_relocate
+FM11,Interim5,No Data.,bad_data,recommend_remove_or_relocate
+FM13,Interim5,No Data.,bad_data,recommend_remove_or_relocate
+FM14,Interim5,Very low flows due to small catchment. Response to rainfall,partial_good_data,partial_data_needs_review
+FM15,Interim5,"Low flows, delayed response to rainfall?
+Slow flow sensor cleaned",bad_data,sensor_fault_or_ragging
+FM16,Interim5,"Negative depths. Low flows 
+Fast flows, sensor cleaned",bad_data,sensor_fault_or_ragging
+FM17,Interim5,"Low flows, responds to rainfall.
+Slow flow, sensor cleaned from heavy ragging- see photos. 
+Wide Scatter.",bad_data,sensor_fault_or_ragging
+FM18,Interim5,Located on spill pipe - 1no spill evident after storm event.,partial_good_data,partial_data_needs_review
+FM19,Interim5,Okay,good_data,no_action_continue_monitoring
+FM20,Interim5,No Data,bad_data,recommend_remove_or_relocate
+FM21,Interim5,Okay,good_data,no_action_continue_monitoring
+FM22,Interim5,No velocity for majority of interim,partial_good_data,partial_data_needs_review
+FM23,Interim5,"Okay
+Steady flow, sensor cleaned from ragging. Sensor is offset.",bad_data,sensor_fault_or_ragging
+FM24,Interim5,Okay. Minimal DWF due to small upstream area of the catchment. Responsive to storm events.Evidence of diurnal profile,partial_good_data,partial_data_no_action
+FM25,Interim5,Okay,good_data,no_action_continue_monitoring
+FM26,Interim5,Okay,good_data,no_action_continue_monitoring
+FM27,Interim5,No Data,bad_data,recommend_remove_or_relocate
+FM28,Interim5,No Data,bad_data,recommend_remove_or_relocate
+FM29,Interim5,Okay,good_data,no_action_continue_monitoring
+FM30,Interim5,"Okay
+Slow flow, sensor cleaned",bad_data,sensor_fault_or_ragging
+FM31,Interim5,Okay,good_data,no_action_continue_monitoring
+FM32,Interim5,"Okay
+Steady flow, installed in X pipe, sensor cleaned.",bad_data,sensor_fault_or_ragging
+FM33,Interim5,Okay,good_data,no_action_continue_monitoring
+FM34,Interim5,"Negative depths
+Fast flows, very greasy pipe - sensor cleaned.
+
+Enviromonetel Response: Awaiting DWCC Approval on relocations",bad_data,sensor_fault_or_ragging
+FM35,Interim5,"Okay
+Sensor relocated to X pipe - see site check sheet for information.",partial_good_data,partial_data_no_action
+FM37,Interim5,Okay,good_data,no_action_continue_monitoring
+FM38,Interim5,"Okay
+Steady flow, sensor cleaned. Pipe size 400mm
+
+Enviromonetel Response: Checks carried out please see site check sheet for interim 5",bad_data,sensor_fault_or_ragging
+FM39,Interim5,"No depth data
+Fast erratic flow, sensor ring blown out on arrival - refitted. Pipe size 375mm.
+
+Enviromonetel Response: Checks carried out please see site check sheet for interim 5",partial_good_data,partial_data_needs_review
+FM40,Interim5,"Okay
+Fast flow conditions, sensor cleaned - data downloaded
+
+Enviromonetel Response: Checks carried out please see site check sheet for interim 5",bad_data,sensor_fault_or_ragging
+FM41,Interim5,"Okay
+Steady flow, sensor cleaned. Pipe size 300mm
+Enviromonetel Response: Checks carried out please see site check sheet for interim 5",bad_data,sensor_fault_or_ragging
+FM42,Interim5,"Okay
+Fast flows, sensor cleaned",bad_data,sensor_fault_or_ragging
+FM43,Interim5,"Velocity drops out during storms
+
+Enviromonetel Response: Please see site check sheet from interim 4 before and after sensor clean photos - evidencing poor data",partial_good_data,partial_data_needs_review
+FM44,Interim5,Okay,good_data,no_action_continue_monitoring
+FM45,Interim5,Velocity drops out during storms,partial_good_data,partial_data_needs_review
+FM47,Interim5,"No velocity data
+Slow flow, sensor and monitor swapped. Sensor installed offset.",partial_good_data,partial_data_needs_review
+FM48,Interim5,Okay,good_data,no_action_continue_monitoring
+FM49,Interim5,No Data,bad_data,recommend_remove_or_relocate
+FM50,Interim5,No Data,bad_data,recommend_remove_or_relocate
+FM51,Interim5,"Good data, none since the 9th Sept",good_data,no_action_continue_monitoring
+FM54,Interim5,FM located on spill pipe.Depth showing negative values.Responsive to only few storm events.,partial_good_data,partial_data_needs_review
+FM55,Interim5,Very low flows due to small upstream catchment. Some storm response but little diurnal pattern. Some depth values negative. Poor correlation.,partial_good_data,partial_data_needs_review
+FM56,Interim5,No data since 6th Sept,bad_data,recommend_remove_or_relocate
+FM57,Interim5,Diurnal pattern and storm reponse evident. Obvious step in readings after a previous cleaning. Good scatter. ,partial_good_data,partial_data_needs_review
+FM58,Interim5,No flow data at all and no depth or velocity data since 3rd Sept,partial_good_data,partial_data_needs_review
+FM59,Interim5,"Good data, diurnal profile evident and responsive to rainfall. Good scatter. Possible drift in data towards latter end and some negative depths. ",good_data,no_action_continue_monitoring
+FM60,Interim5,No data since 30th Aug,bad_data,recommend_remove_or_relocate
+FM61,Interim5,"Poor data, high velocities and low depths (below 0). Some storm response. No data since 9th Aug",bad_data_storm_response_failed,investigate_storm_failure
+FM62,Interim5,No flow data recorded. Poor data.,partial_good_data,partial_data_needs_review
+FM63,Interim5,No data since 4th Sept,bad_data,recommend_remove_or_relocate
+FM64,Interim5,No data since 4th Sept,bad_data,recommend_remove_or_relocate
+FM65,Interim5,No data since 4th Sept,bad_data,recommend_remove_or_relocate
+FM66,Interim5,Some evidence of diurnal flow and storm response although not as clear as before (possibly due to ragging?). Scatter ok. Sensor cleaned,bad_data,sensor_fault_or_ragging
+FM67,Interim5,"Large step in depth data from 3rd-10th Sept before relocation, also possibly issue with flow data in this time. Some storm response. Sensor now on x pipe. ",bad_data_storm_response_failed,investigate_storm_failure
+FM68,Interim5,"Data ok, depth value drops below 0. Responsive to storm events but less evidence of diurnal profile. Evidence of some surge charge. No data since 9th Sept",bad_data,recommend_remove_or_relocate
+FM69,Interim5,FM located on spill pipe.Data looks ok. Good scatter,partial_good_data,partial_data_needs_review
+FM70,Interim5,"Poor data, velocity, flow and depth drop outs and depth below 0. Some evidence of diurnal profile and storm reponse. Relacted to pipe x. ",partial_good_data,partial_data_needs_review
+FM71,Interim5,"Good data, diurnal profile and storm response evident. Step up in data around 20th Aug. ",good_data,no_action_continue_monitoring
+FM72,Interim5,No data since 3rd Sept ,bad_data,recommend_remove_or_relocate
+FM73,Interim5,Data ok. Level seems to change- sensor in wrong place? Notes suggest offset. ,partial_good_data,partial_data_needs_review
+FM74,Interim5,FM on bifurcation. Negative depths. Responsive to storm events. ,partial_good_data,partial_data_needs_review
+FM75,Interim5,No data since 3rd Sept,bad_data,recommend_remove_or_relocate
+FM76,Interim5,Data looks good.diurnal profile is evident.Responsive to rainfall.Scattergraph looks good.,good_data,no_action_continue_monitoring
+FM77,Interim5,Good data.Responsive to storm events and evidence of diurnal profile. Good scatter,good_data,no_action_continue_monitoring
+FM78,Interim5,Responsive to rainfall events.Some negative depth values. Good scatter,partial_good_data,partial_data_needs_review
+FM80,Interim5,"Diurnal profile and storm response evident. Good data, good scatter. Possible step/drift in data around 23rd Aug",good_data,no_action_continue_monitoring
+FM81,Interim5,Diurnal profile and storm response evident. Good scatter,partial_good_data,partial_data_needs_review
+FM82,Interim5,Diurnal profile and storm response evident. Posisble data drop out and surcharge? No data since 8th Sept,bad_data_storm_response_failed,investigate_storm_failure
+FM83,Interim5,"Ok data, storm response evident. Evidence of surcharge",partial_good_data,partial_data_needs_review
+FM84,Interim5,"Ok data and scatter, storm response and dirunal profile mostly evident. ",partial_good_data,partial_data_needs_review
+FM85,Interim5,Evidence of diurnal profile and storm response. Some negative depth values. Scatter ok. Drift in velocity data?,partial_good_data,partial_data_needs_review
+FM86,Interim5,"Data ok, storm response evident but low flows in DWF. ",partial_good_data,partial_data_needs_review
+FM87,Interim5,"Very low flows, storm response evident.",partial_good_data,partial_data_needs_review
+FM88,Interim5,"Okay. responds to rainfall, velocity drops during storms
+Slow flow, sensor heavily ragged and greased - see photos, cleaned",partial_good_data,partial_data_no_action
+FM90,Interim5,"Negative depth recordings and low dwf. Flow has small response to rainfall
+
+Trickle flow",partial_good_data,partial_data_no_action
+FM91,Interim5,Okay. Negative depth on 6+5/09. Low/no dwf,partial_good_data,partial_data_no_action
+FM92,Interim5,"Okay. Negative depth recorded on 7/09. Low/no dwf.
+
+Enviromontel: Relocated to C pipe as requested.",partial_good_data,partial_data_no_action
+FM93,Interim5,FM on bifurication. No flow. Depth and velocity respond to rainfall,partial_good_data,partial_data_needs_review
+FM94,Interim5,good data,good_data,no_action_continue_monitoring
+FM95,Interim5,Good data. Few minor velocity drops,good_data,no_action_continue_monitoring
+FM96,Interim5,"Responds to rainfall, low flow during dry periods. Velocity data sporadic",partial_good_data,partial_data_needs_review
+FM97,Interim5,"No velocity data after 7/09
+Slow flow, cleaned from ragging",bad_data,sensor_fault_or_ragging
+FM98,Interim5,"good data, no dwf
+
+Slow flow, sensor cleaned from ragging and silt. Sensor is offset.",good_data,no_action_continue_monitoring
+FM99,Interim5,"Good data, but little-no flow in dry weather",good_data,no_action_continue_monitoring
+FM100,Interim5,"Good data, evidence of diurnal flow and storm response. Evidence of surcharge",good_data,no_action_continue_monitoring
+FM103,Interim5,"No velocities recorded in DWF
+Sensor cleaned",bad_data,sensor_fault_or_ragging
+FM104,Interim5,Okay,good_data,no_action_continue_monitoring
+FM105,Interim5,Okay,good_data,no_action_continue_monitoring
+FM106,Interim5,Okay,good_data,no_action_continue_monitoring
+FM107,Interim5,Okay,good_data,no_action_continue_monitoring
+FM108,Interim5,"Poor velocity data.Steady flow, sensor cleaned from ragging and grease.",bad_data,sensor_fault_or_ragging
+FM110,Interim5,Okay,good_data,no_action_continue_monitoring
+FM111,Interim5,Okay.Gap in data on 29/08/2024,partial_good_data,partial_data_no_action
+FM112,Interim5,To be relocated,partial_good_data,partial_data_needs_review
+FM114,Interim5,Okay,good_data,no_action_continue_monitoring
+FM115,Interim5,"Data looks ok.Volume imbalance issues. FM 114 Vol (DS monitor)=2,00,000, FM115=32,000",partial_good_data,partial_data_needs_review
+FM116,Interim5,Okay,good_data,no_action_continue_monitoring
+FM117,Interim5,Okay,good_data,no_action_continue_monitoring
+FM118,Interim5,Velocity drops out at multiple times.Sensor removed cleaned and refitted offset,bad_data,recommend_remove_or_relocate
+FM119,Interim5,Data looks good.,partial_good_data,partial_data_needs_review
+FM120,Interim5,Okay,good_data,no_action_continue_monitoring
+FM121,Interim5,Low flows.Wide scatter,partial_good_data,partial_data_needs_review
+FM122,Interim5,Poor data.Negative depth values.,partial_good_data,partial_data_needs_review
+FM123,Interim5,Data downloaded.Data looks ok.,partial_good_data,partial_data_needs_review
+FM124,Interim5,Okay,good_data,no_action_continue_monitoring
+FM125,Interim5,Poor data.Huge gaps in velocity data.,partial_good_data,partial_data_needs_review
+FM126,Interim5,to be relocated,partial_good_data,partial_data_needs_review
+FM127,Interim5,to be relocated,partial_good_data,partial_data_needs_review
+FM128,Interim5,Good data,good_data,no_action_continue_monitoring
+FM129,Interim5,Poor data,partial_good_data,partial_data_needs_review
+FM130,Interim5,Sensor cleaned - data downloaded.No flows recorded in DWF.,bad_data,sensor_fault_or_ragging
+FM131,Interim5,Poor data .No velocity recorded in most of the period.,partial_good_data,partial_data_needs_review
+FM132,Interim5,Data looks good.,partial_good_data,partial_data_needs_review
+FM133,Interim5,Okay,good_data,no_action_continue_monitoring
+FM134,Interim5,Spikes in velocity data,partial_good_data,partial_data_needs_review
+FM135,Interim5,FM located on high level bifurcation.No flow data exept storm events.,partial_good_data,partial_data_needs_review
+FM136,Interim5,Poor data.,partial_good_data,partial_data_needs_review
+FM137,Interim5,No flow in DWF.,partial_good_data,partial_data_needs_review
+FM138,Interim5,Okay,good_data,no_action_continue_monitoring
+FM139,Interim5,Okay,good_data,no_action_continue_monitoring
+FM140,Interim5,Data looks ok.No data from 03/09/2024,bad_data,recommend_remove_or_relocate
+FM141,Interim5,Negative depths,partial_good_data,partial_data_needs_review
+FM142,Interim5,Negative depth data.Data improved from 30/08/2024,partial_good_data,partial_data_needs_review
+FM143,Interim5,Negative depth data.,partial_good_data,partial_data_needs_review
+FM144,Interim5,Okay,good_data,no_action_continue_monitoring
+FM145,Interim5,FM located on storm pipe.Data drops out multiple times.Negative depth values.,partial_good_data,partial_data_needs_review
+FM146,Interim5,Okay,good_data,no_action_continue_monitoring
+FM147,Interim5,Okay,good_data,no_action_continue_monitoring
+FM148,Interim5,As per previous interims.,partial_good_data,partial_data_needs_review
+FM149,Interim5,Okay,good_data,no_action_continue_monitoring
+FM150,Interim5,Poor data-low flows,partial_good_data,partial_data_needs_review
+FM151,Interim5,Okay,good_data,no_action_continue_monitoring
+FM152,Interim5,Negative depth values,partial_good_data,partial_data_needs_review
+FM153,Interim5,Poor data.Negative depth values.,partial_good_data,partial_data_needs_review
+FM154,Interim5,Okay,good_data,no_action_continue_monitoring
+FM155,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM156,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM157,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM158,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM159,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM160,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM161,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM162,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM163,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+FM164,Interim5,FM not installed,bad_data,recommend_remove_or_relocate
+DM01,Interim5,Data OK,partial_good_data,partial_data_needs_review
+DM02,Interim5,Data OK,partial_good_data,partial_data_needs_review
+RG01,Interim5,RG SWAPPED,partial_good_data,partial_data_needs_review
+RG02,Interim5,Okay,good_data,no_action_continue_monitoring
+RG03,Interim5,RG relocated - see sheet for details.,partial_good_data,partial_data_needs_review
+RG04,Interim5,Okay,good_data,no_action_continue_monitoring
+RG05,Interim5,RG SWAPPED,partial_good_data,partial_data_needs_review
+RG06,Interim5,RG SWAPPED,partial_good_data,partial_data_needs_review
+RG07,Interim5,Okay,good_data,no_action_continue_monitoring
+RG08,Interim5,Okay,good_data,no_action_continue_monitoring
+RG09,Interim5,Okay,good_data,no_action_continue_monitoring
+RG10,Interim5,Okay,good_data,no_action_continue_monitoring
+RG11,Interim5,Okay,good_data,no_action_continue_monitoring
+RG12,Interim5,Okay,good_data,no_action_continue_monitoring
+RG13,Interim5,Okay,good_data,no_action_continue_monitoring
+RG14,Interim5,Okay,good_data,no_action_continue_monitoring
+RG15,Interim5,Okay,good_data,no_action_continue_monitoring
+RG16,Interim5,RG checked - All okay,partial_good_data,partial_data_no_action
+FM01,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM02,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM03,Interim6,Negative depth values from 04/09/2024.Sensor cleaned from ragging. Graph showed calibration error - Sensor recalibrated. ,bad_data,sensor_fault_or_ragging
+FM04,Interim6,Data looks good.Sensor clear but wiped anyway.,partial_good_data,partial_data_needs_review
+FM05,Interim6,Poor data.Negative depth values.Dry pipe. Sensor cleaned from ragging.Wide scatter.Tiny amount of flow recorded during storm events.,bad_data,sensor_fault_or_ragging
+FM06,Interim6,Monitor removed and relocated. See FM155,bad_data,recommend_remove_or_relocate
+FM09,Interim6,"Velocities dropped out from 11/09, probably due to ragging.",bad_data,sensor_fault_or_ragging
+FM10,Interim6,Good data,good_data,no_action_continue_monitoring
+FM11,Interim6,Bifurcation - only spills recorded.,partial_good_data,partial_data_needs_review
+FM13,Interim6,No DWF recorded. Some storm response.,bad_data_storm_response_failed,investigate_storm_failure
+FM14,Interim6,Very low flow. Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM15,Interim6,Low flows. Negative depth values. Sensor cleaned from ragging. Good data from 13/09.,good_data,no_action_continue_monitoring
+FM16,Interim6,Negtive depth values. Low flows. Sensor cleaned from ragging. Sensor recalibrated to match manual measurements.,bad_data,sensor_fault_or_ragging
+FM17,Interim6,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM18,Interim6,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM19,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM20,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM21,Interim6,Data looks good. Velocities affected by ragging from 16/09 - cleaned.,bad_data,sensor_fault_or_ragging
+FM22,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM23,Interim6,Data looks good. No data after 18/09/2024,bad_data,recommend_remove_or_relocate
+FM24,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM25,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM26,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM27,Interim6,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM28,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM29,Interim6,Telemetry data downloaded. Velocities affected by ragging from 16/09.,bad_data,sensor_fault_or_ragging
+FM30,Interim6,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM31,Interim6,Low flow. Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM32,Interim6,Monitor relocated to FM156,partial_good_data,partial_data_needs_review
+FM33,Interim6,Okay.FM located on spill pipe,partial_good_data,partial_data_no_action
+FM34,Interim6,Monitor removed and relocated to FM157,bad_data,recommend_remove_or_relocate
+FM35,Interim6,Monitor relocated to FM158,partial_good_data,partial_data_needs_review
+FM37,Interim6,Okay.,partial_good_data,partial_data_no_action
+FM38,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM39,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM40,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM41,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM42,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM43,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM44,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM45,Interim6,Okay,good_data,no_action_continue_monitoring
+FM47,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM48,Interim6,Very low flow and depth values.Depth showing negative values,partial_good_data,partial_data_needs_review
+FM49,Interim6,Good data,good_data,no_action_continue_monitoring
+FM50,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM51,Interim6,"Good data, small flow that follows storm events and has a diurnal pattern.",good_data,no_action_continue_monitoring
+FM54,Interim6,"No flow, FM located on spill pipe. ",partial_good_data,partial_data_needs_review
+FM55,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM56,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM57,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM58,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM59,Interim6,"Good data, small flow that responds to storm events and velocity follows diurnal profile.",good_data,no_action_continue_monitoring
+FM60,Interim6,"No flow, velocity responds to rainfall.",partial_good_data,partial_data_needs_review
+FM61,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM62,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM63,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM64,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM65,Interim6,No data since 4th Sept,bad_data,recommend_remove_or_relocate
+FM66,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM67,Interim6,"Negative depths recorded up to 10/09. FM was relocated to the X pipe on 10/09. Data improved. little/no flow and depth, however velocity follows diurnal profile, no data after midday 16/09",bad_data,recommend_remove_or_relocate
+FM68,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM69,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM70,Interim6,"FM was relocated to X pipe on 10/09. Good data, flow follows storm events and has small DWF ",good_data,no_action_continue_monitoring
+FM71,Interim6,"Good data, no data after midday 16/09",good_data,no_action_continue_monitoring
+FM72,Interim6,Flow does not respond to light rainfall (FM located on dry pipe/bifurcation),partial_good_data,partial_data_needs_review
+FM73,Interim6,"Good depth data. Velocities drop out from 12/09., clear response to storm events but no dwf",partial_good_data,partial_data_needs_review
+FM74,Interim6,"FM on bifurcation, no flow. Ok data for depth and velocity",partial_good_data,partial_data_needs_review
+FM75,Interim6,"Good data, small flow and depth readings, velocity follows a diurnal pattern",good_data,no_action_continue_monitoring
+FM76,Interim6,"Ok data, little/no flow or depth data. Velocities look good.",partial_good_data,partial_data_needs_review
+FM77,Interim6,Good data.,good_data,no_action_continue_monitoring
+FM78,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM80,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM81,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM82,Interim6,"Good depth data, diurnal profile. Velocities dropped out from 07/09.",partial_good_data,partial_data_needs_review
+FM83,Interim6,"Good data, small response to storm event. Evidence of surcharge.",good_data,no_action_continue_monitoring
+FM84,Interim6,"Good data, responds to storm event and has dwf. Velocity shows diurnal profile.",good_data,no_action_continue_monitoring
+FM85,Interim6,"Good data, responds to storm event, no negative depths after 15/09, velocity shows clear diurnal profile",good_data,no_action_continue_monitoring
+FM86,Interim6,"Ok data, responds to storm event however no/ minimal dwf because depths drop below 0. Velocity follows diurnal profile",partial_good_data,partial_data_needs_review
+FM87,Interim6,"Very low depths. Depth readings improve from 11/09 but velocities become more patchy. Sensor cleaned from ragging. No flow data since 11/09, negative depth reading throughout. Velocity follows storm event.",bad_data,sensor_fault_or_ragging
+FM88,Interim6,"Good data, velocity is high. Flows responds to storm event and follows diurnal profile.",good_data,no_action_continue_monitoring
+FM90,Interim6,"Poor flow data and very varied, sometimes negative depth readings. No clear response to storm event, no dwf. Small u/s catchment - ok.",partial_good_data,partial_data_needs_review
+FM91,Interim6,"Ok data, velocity seems to roughly follow diurnal profile. little/no dwf and varied depth readings.",partial_good_data,partial_data_needs_review
+FM92,Interim6,FM relocated to C pipe on 12/09. Improved data.,partial_good_data,partial_data_needs_review
+FM93,Interim6,"No velocity or flow data since 7/09 as FM on bifurcation therefore no dwf, or response to small storm event.",partial_good_data,partial_data_needs_review
+FM94,Interim6,"Good data. Flows follow diurnal profile, flow responds to small storm event.",good_data,no_action_continue_monitoring
+FM95,Interim6,"Pumped flow, good data. ",good_data,no_action_continue_monitoring
+FM96,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM97,Interim6,"Velocity returns after 9/09, good data, velocity and flow responds to storm events, small dwf  ",good_data,no_action_continue_monitoring
+FM98,Interim6,Depth data ok. Velocities affected by ragging/grease.,bad_data,sensor_fault_or_ragging
+FM99,Interim6,Data looks reasonable.,partial_good_data,partial_data_needs_review
+FM100,Interim6,"Good data, evidence of diurnal flow and storm response. Evidence of surcharge. Unable to check as car parked on top of manhole",good_data,no_action_continue_monitoring
+FM103,Interim6,No velocity despite depths during DWF. Sensor cleaned. Storm response,bad_data,sensor_fault_or_ragging
+FM104,Interim6,"Diurnal profile evident, storm response, good data",good_data,no_action_continue_monitoring
+FM105,Interim6,"Diurnal profile evident, storm response, good data. Some negative depths",good_data,no_action_continue_monitoring
+FM106,Interim6,Recent data has drifted readings. Sensor cleaned and recalibrated. ,bad_data,sensor_fault_or_ragging
+FM107,Interim6,Recent data may have drift and unusual storm response for location. Sensor cleaned,bad_data,sensor_fault_or_ragging
+FM108,Interim6,"Data ok, storm response evident and some diurnal profile. Recalibration and clean",partial_good_data,partial_data_needs_review
+FM110,Interim6,"Good data, storm and diurnal response evident. ",good_data,no_action_continue_monitoring
+FM111,Interim6,"Good data, storm and diurnal response evident. ",good_data,no_action_continue_monitoring
+FM112,Interim6,Depth data drift from beginning of readings. Monitor relocated on 16/09 (FM162 - awaiting data).,partial_good_data,partial_data_needs_review
+FM114,Interim6,"Good data, storm and diurnal response evident. ",good_data,no_action_continue_monitoring
+FM115,Interim6,"Good data, storm and diurnal response evident. Volume imbalance remains",good_data,no_action_continue_monitoring
+FM116,Interim6,"Significant data drift/issue with readings. Sensor had moved due to turbulant flow, monitor removed.",bad_data,recommend_remove_or_relocate
+FM117,Interim6,Depth and flow data drop out and velocity data drift. Sensor dislodged in pipe and refitted on site visit. ,partial_good_data,partial_data_needs_review
+FM118,Interim6,Velocity and flow data drop outs. Depth data ok but appears to drift. Cleaned from raggin on visit. ,partial_good_data,partial_data_needs_review
+FM119,Interim6,"Good data, storm and diurnal response evident. Removal requested 19/09, nothing in site notes.",good_data,no_action_continue_monitoring
+FM120,Interim6,"Good data, storm and diurnal response evident. Removal requested 19/09, nothing in site notes.",good_data,no_action_continue_monitoring
+FM121,Interim6,Very low depths (some negative). Low flow.,partial_good_data,partial_data_needs_review
+FM122,Interim6,"Good data, storm and diurnal response evident. Removal requested 19/09, nothing in site notes.",good_data,no_action_continue_monitoring
+FM123,Interim6,"Good data, storm and diurnal response evident. Removal requested 19/09, nothing in site notes.",good_data,no_action_continue_monitoring
+FM124,Interim6,Data changed on 06/09 - negative deptsh recorded adn velocities reduced. No flows recorded.,partial_good_data,partial_data_needs_review
+FM125,Interim6,Poor data. Further flow and velocity data drop outs and large sections of negative depths,partial_good_data,partial_data_needs_review
+FM126,Interim6,"Potential data issue - depth, flow and velocity trends do not match previous. Monitor relocated.",partial_good_data,partial_data_needs_review
+FM127,Interim6,Good data.,good_data,no_action_continue_monitoring
+FM128,Interim6,Reasonable data.,partial_good_data,partial_data_needs_review
+FM129,Interim6,Small catchment - low flows. Ok.,partial_good_data,partial_data_needs_review
+FM130,Interim6,Very poor velocity data. Only depth data is usable. Sensor cleaned from grease.,bad_data,sensor_fault_or_ragging
+FM131,Interim6,Very poor velocity data. Only depth data is usable. Sensor cleaned from ragging and silt. Sensor offset to avoid further silt.,bad_data,sensor_fault_or_ragging
+FM132,Interim6,Good data.,good_data,no_action_continue_monitoring
+FM133,Interim6,No data since 13/09. Data ok up to this point.,bad_data,recommend_remove_or_relocate
+FM134,Interim6,No data since 05/09,bad_data,recommend_remove_or_relocate
+FM135,Interim6,FM located on high level bifurcation.No flow recorded.,partial_good_data,partial_data_needs_review
+FM136,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM137,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM138,Interim6,Okay,good_data,no_action_continue_monitoring
+FM139,Interim6,Okay,good_data,no_action_continue_monitoring
+FM140,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM141,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM142,Interim6,Okay,good_data,no_action_continue_monitoring
+FM143,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM144,Interim6,Okay,good_data,no_action_continue_monitoring
+FM145,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM146,Interim6,Good data.,good_data,no_action_continue_monitoring
+FM147,Interim6,Good data.,good_data,no_action_continue_monitoring
+FM148,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM149,Interim6,Good data. Velocities drop out towards end of period. Needs cleaning,good_data,no_action_continue_monitoring
+FM150,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM151,Interim6,Good data,good_data,no_action_continue_monitoring
+FM152,Interim6,Good data,good_data,no_action_continue_monitoring
+FM153,Interim6,Good data. Velocities drop out towards end of period but sensor has been cleaned of ragging.,good_data,no_action_continue_monitoring
+FM154,Interim6,Good data.,good_data,no_action_continue_monitoring
+FM155,Interim6,Installed 20/09 - relocation of FM06,partial_good_data,partial_data_needs_review
+FM156,Interim6,Installed 03/09 - relocation of FM32,partial_good_data,partial_data_needs_review
+FM157,Interim6,Installed 19/09 - relocation of FM34,partial_good_data,partial_data_needs_review
+FM158,Interim6,Installed 10/09 - relocation of FM35,partial_good_data,partial_data_needs_review
+FM159,Interim6,Installed 10/09 - relocation of FM67,partial_good_data,partial_data_needs_review
+FM160,Interim6,Installed 10/09 - relocation of FM70. Good data.,good_data,no_action_continue_monitoring
+FM161,Interim6,Installed 12/09 - relocation of FM92,partial_good_data,partial_data_needs_review
+FM162,Interim6,Installed 16/09 - relocation of FM112,partial_good_data,partial_data_needs_review
+FM163,Interim6,Installed 18/09 - relocation of FM126,partial_good_data,partial_data_needs_review
+FM164,Interim6,Installed 05/09 - relocation of FM127,partial_good_data,partial_data_needs_review
+DM01,Interim6,Dry weather - some depths recorded but likely to be erroneous data,partial_good_data,partial_data_needs_review
+DM02,Interim6,No data since 09/09,bad_data,recommend_remove_or_relocate
+DM03,Interim6,Monitor was swapped on 09/09 but still experiencing data drop outs during storm events.,partial_good_data,partial_data_needs_review
+PL02,Interim6,Removal Requested 19/09,bad_data,recommend_remove_or_relocate
+FM01,Interim7,Good data available until 25th Sept. Monitor now noted to have been moved. ,good_data,no_action_continue_monitoring
+FM02,Interim7,Data available until 20th Sept. Monitor now noted to be moved. ,partial_good_data,partial_data_needs_review
+FM03,Interim7,Depth values appear better after calibration. Very low flow readings in recent data. Sensor cleaned,bad_data,sensor_fault_or_ragging
+FM04,Interim7,"Good data, good scatter, diurnal and storm response. Sensor cleaned.",good_data,no_action_continue_monitoring
+FM05,Interim7,"Poor data, some negative depth values previously. Very low flow, more flow in storm events",partial_good_data,partial_data_needs_review
+FM06,Interim7,See FM155,partial_good_data,partial_data_needs_review
+FM09,Interim7,No data since 19th sept,bad_data,recommend_remove_or_relocate
+FM10,Interim7,No data since 17th sept,bad_data,recommend_remove_or_relocate
+FM11,Interim7,Only has data on spills but possibly missing latest spill data?,partial_good_data,partial_data_needs_review
+FM13,Interim7,No data since 17th sept,bad_data,recommend_remove_or_relocate
+FM14,Interim7,"Data ok, responsive to storm events. ",partial_good_data,partial_data_needs_review
+FM15,Interim7,Low flows and negative depth values. Good diurnal pattern and storm response. ,partial_good_data,partial_data_needs_review
+FM16,Interim7,"Ok data, diurnal pattern and storm response. ",partial_good_data,partial_data_needs_review
+FM17,Interim7,"ok data, wide scatter, responsive to storm events but low flow",partial_good_data,partial_data_needs_review
+FM18,Interim7,"On spill pipe, only flow in storm event",partial_good_data,partial_data_needs_review
+FM19,Interim7,Good data up to 25th Sept. Monitor now noted to be moved. ,good_data,no_action_continue_monitoring
+FM20,Interim7,No data since 12th Sept. Monitor noted to have been relocated,bad_data,recommend_remove_or_relocate
+FM21,Interim7,No data since 17th Sept,bad_data,recommend_remove_or_relocate
+FM22,Interim7,"Depth data ok, no flow or velocity data since 5th sept. Monitor noted to now be moved. ",partial_good_data,partial_data_needs_review
+FM23,Interim7,"Ok data, wide scatter. Responsive to storm events and diurnal profile evident. Calibrated. ",partial_good_data,partial_data_needs_review
+FM24,Interim7,"Data ok, data up to 17th sept. Monitor now noted to be moved",partial_good_data,partial_data_needs_review
+FM25,Interim7,"Recent data seems different to the rest of the data. Data ok, dirunal response evident. Notes state monitor now moved. ",partial_good_data,partial_data_needs_review
+FM26,Interim7,Recent data seems lower quality. Noted that monitor now moved. ,partial_good_data,partial_data_needs_review
+FM27,Interim7,No data since 5th Sept.,bad_data,recommend_remove_or_relocate
+FM28,Interim7,Good data with diurnal profile and storm response. Step up in recent depth data. Monitor noted to now be moved. ,good_data,no_action_continue_monitoring
+FM29,Interim7,Good data since cleaned sensors with diurnal profile and storm response. ,good_data,no_action_continue_monitoring
+FM30,Interim7,"Good data, diurnal flow and storm response evident. Low flows",good_data,no_action_continue_monitoring
+FM31,Interim7,"Good data, diurnal flow and storm response evident. Low flows",good_data,no_action_continue_monitoring
+FM32,Interim7,See FM156,partial_good_data,partial_data_needs_review
+FM33,Interim7,"Okay data, located on spill pipe",partial_good_data,partial_data_no_action
+FM34,Interim7,See FM157,partial_good_data,partial_data_needs_review
+FM35,Interim7,See FM158,partial_good_data,partial_data_needs_review
+FM37,Interim7,"Good data, ok scatter. Diurnal profile and storm response evident",good_data,no_action_continue_monitoring
+FM38,Interim7,Good data up to 23rd septh. Monitor now moved.,good_data,no_action_continue_monitoring
+FM39,Interim7,Good data up to 24th sept. Monitor now moved.,good_data,no_action_continue_monitoring
+FM40,Interim7,Good data up to 23rd sept. Monitor now moved.,good_data,no_action_continue_monitoring
+FM41,Interim7,Good data up to 23rd sept. Monitor now moved.,good_data,no_action_continue_monitoring
+FM42,Interim7,Good data up to 25th sept. Monitor now moved.,good_data,no_action_continue_monitoring
+FM43,Interim7,ok data to 23rd sept. Monitor now moved. ,partial_good_data,partial_data_needs_review
+FM44,Interim7,Good data to 25th sept. Monitor now moved.,good_data,no_action_continue_monitoring
+FM45,Interim7,"Diurnal pattern evident, responsive to storm events. Possible surcharge and drifts in data?",partial_good_data,partial_data_needs_review
+FM47,Interim7,Erratic flow and velocity data. Monitor now moved. ,partial_good_data,partial_data_needs_review
+FM48,Interim7,Very low flow and depth values.Depth showing negative values. Good scatter,partial_good_data,partial_data_needs_review
+FM49,Interim7,"Good data, ok scatter. Diurnal profile and storm response evident",good_data,no_action_continue_monitoring
+FM50,Interim7,No data since 17th Sept. Monitor now moved,bad_data,recommend_remove_or_relocate
+FM51,Interim7,Data looks good.Storm respnse and diurnal profile is evident.,partial_good_data,partial_data_needs_review
+FM54,Interim7,"No flow, FM located on spill pipe. ",partial_good_data,partial_data_needs_review
+FM55,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM56,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM57,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM58,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM59,Interim7,Good data.Responsive to storm events.Some negative depth values.,good_data,no_action_continue_monitoring
+FM60,Interim7,No DWF.Velocity responds to rainfall,partial_good_data,partial_data_needs_review
+FM65,Interim7,Removed in error. Reinstalled on 25/09.,bad_data,recommend_remove_or_relocate
+FM66,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM67,Interim7,See FM159,partial_good_data,partial_data_needs_review
+FM68,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM69,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM70,Interim7,See FM160,partial_good_data,partial_data_needs_review
+FM71,Interim7,Data looks good.No data after 24/09/2024,bad_data,recommend_remove_or_relocate
+FM72,Interim7,FM located on bifurcation.No response to light rainfall.,partial_good_data,partial_data_needs_review
+FM73,Interim7,Good data,good_data,no_action_continue_monitoring
+FM74,Interim7,FM located on bifurcation.Negative depth values.,partial_good_data,partial_data_needs_review
+FM75,Interim7,Good data.Low flow and velocitiy values.Evidence of diurnal pattern.,good_data,no_action_continue_monitoring
+FM76,Interim7,Okay,good_data,no_action_continue_monitoring
+FM77,Interim7,Okay,good_data,no_action_continue_monitoring
+FM78,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM80,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM81,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM82,Interim7,Data looks ok.Few velocity drop out.,partial_good_data,partial_data_needs_review
+FM83,Interim7,Okay,good_data,no_action_continue_monitoring
+FM84,Interim7,Okay,good_data,no_action_continue_monitoring
+FM85,Interim7,Dta looks good.Evidence of dirurnal profile.,partial_good_data,partial_data_needs_review
+FM86,Interim7,Okay,good_data,no_action_continue_monitoring
+FM87,Interim7,Very low flow.Velocity data drops out multiple times.,partial_good_data,partial_data_needs_review
+FM88,Interim7,Okay,good_data,no_action_continue_monitoring
+FM90,Interim7,Poor flow data.Some negative depth values,partial_good_data,partial_data_needs_review
+FM91,Interim7,Negative depth data.No clear response to storm.,partial_good_data,partial_data_needs_review
+FM92,Interim7,See FM161,partial_good_data,partial_data_needs_review
+FM93,Interim7,FM located on bifurcation.No flow.,partial_good_data,partial_data_needs_review
+FM94,Interim7,Data looks good.Evidence of diurnal profile,partial_good_data,partial_data_needs_review
+FM95,Interim7,Pumped flow.Good data,good_data,no_action_continue_monitoring
+FM96,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM97,Interim7,Okay,good_data,no_action_continue_monitoring
+FM98,Interim7,Okay.No DWF,partial_good_data,partial_data_no_action
+FM99,Interim7,Good data.Data drops out on 18/09/2024,good_data,no_action_continue_monitoring
+FM100,Interim7,Good data,good_data,no_action_continue_monitoring
+FM103,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM104,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM105,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM106,Interim7,"Drop in velocity but okay.
+Steady flow. Sensor cleaned from ragging and grease. ",bad_data,sensor_fault_or_ragging
+FM107,Interim7,Okay,good_data,no_action_continue_monitoring
+FM108,Interim7,Okay,good_data,no_action_continue_monitoring
+FM110,Interim7,Okay,good_data,no_action_continue_monitoring
+FM111,Interim7,Okay,good_data,no_action_continue_monitoring
+FM112,Interim7,See FM162,partial_good_data,partial_data_needs_review
+FM114,Interim7,Okay,good_data,no_action_continue_monitoring
+FM115,Interim7,"Okay. Volume imbalance remains
+
+Steady flow. Sensor cleaned from ragging and grease. Sensor calibrated to match manual measurements. ",bad_data,sensor_fault_or_ragging
+FM116,Interim7,Awaiting relocation (FM165),partial_good_data,partial_data_needs_review
+FM117,Interim7,Awaiting relocation (FM166),partial_good_data,partial_data_needs_review
+FM118,Interim7,"Velocity drops out, depth okay, responds to rainfall",partial_good_data,partial_data_no_action
+FM119,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM120,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM121,Interim7,"Very low flows in dry weather, data looks okay during storms",bad_data_dryday_failed,investigate_dryday_failure
+FM122,Interim7,Okay,good_data,no_action_continue_monitoring
+FM123,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM124,Interim7,"No Flows recorded
+Moniotr swapped - sensor refitted.",partial_good_data,partial_data_needs_review
+FM125,Interim7,Poor data. Further flow and velocity data drop outs and negative depths,partial_good_data,partial_data_needs_review
+FM126,Interim7,See FM163,partial_good_data,partial_data_needs_review
+FM127,Interim7,See FM164,partial_good_data,partial_data_needs_review
+FM128,Interim7,Okay,good_data,no_action_continue_monitoring
+FM129,Interim7,Small catchment - low flows. Ok.,partial_good_data,partial_data_needs_review
+FM130,Interim7,Very poor velocity data. Only depth data is usable. Slow flow. Sensor cleaned from ragging.,bad_data,sensor_fault_or_ragging
+FM131,Interim7,"Very poor velocity data. Only depth data is usable.
+Slow flow. Sensor cleaned from ragging.",bad_data,sensor_fault_or_ragging
+FM132,Interim7,Okay,good_data,no_action_continue_monitoring
+FM133,Interim7,Okay. Spikes in velocity,partial_good_data,partial_data_no_action
+FM134,Interim7,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM135,Interim7,FM located on high level bifurcation.No flow recorded.,partial_good_data,partial_data_needs_review
+FM136,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM137,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM138,Interim7,Okay,good_data,no_action_continue_monitoring
+FM139,Interim7,Okay,good_data,no_action_continue_monitoring
+FM140,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM141,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM142,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM143,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM144,Interim7,Okay,good_data,no_action_continue_monitoring
+FM145,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM146,Interim7,Okay,good_data,no_action_continue_monitoring
+FM147,Interim7,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM148,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM149,Interim7,"Velocity drops out for most of interim, back toward end",partial_good_data,partial_data_needs_review
+FM150,Interim7,Removed,bad_data,recommend_remove_or_relocate
+FM151,Interim7,Okay,good_data,no_action_continue_monitoring
+FM152,Interim7,Okay,good_data,no_action_continue_monitoring
+FM153,Interim7,"Okay, low flow",partial_good_data,partial_data_no_action
+FM154,Interim7,Okay,good_data,no_action_continue_monitoring
+FM155,Interim7,Okay,good_data,no_action_continue_monitoring
+FM156,Interim7,"Okay. Spikes in velocity
+Steady flow. Sensor cleaned from ragging.",bad_data,sensor_fault_or_ragging
+FM157,Interim7,No Data,bad_data,recommend_remove_or_relocate
+FM158,Interim7,"Okay, couple minor velocity drops",partial_good_data,partial_data_no_action
+FM159,Interim7,Okay,good_data,no_action_continue_monitoring
+FM160,Interim7,Okay,good_data,no_action_continue_monitoring
+FM161,Interim7,Okay. Negative Depths,partial_good_data,partial_data_no_action
+FM162,Interim7,Flow drops out for most of interim,partial_good_data,partial_data_needs_review
+FM163,Interim7,Installed on spill pipe. Reacts to rainfall.,partial_good_data,partial_data_needs_review
+FM164,Interim7,"Okay, minor velocity drops",partial_good_data,partial_data_no_action
+FM03,Interim8,Very poor data,bad_data,sensor_fault_or_ragging
+FM04,Interim8,Good Data. Makes sense with d/s FM155.,good_data,no_action_continue_monitoring
+FM05,Interim8,Bifurcation - minor spills recorded.,partial_good_data,partial_data_needs_review
+FM09,Interim8,Good Data. Makes sense with d/s FM10.,good_data,no_action_continue_monitoring
+FM10,Interim8,Good Data. Makes sense with d/s FM09.,good_data,no_action_continue_monitoring
+FM11,Interim8,Good data. Bifurcation - records no DWF but reacts to rainfall.,good_data,no_action_continue_monitoring
+FM13,Interim8,"Velocity drop outs. Slow flow, pipe nearly at full bore. Good data during storms and matches well with u/s FM16.",good_data,no_action_continue_monitoring
+FM14,Interim8,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM15,Interim8,Unable to access. Parked cars blocking room for setup,partial_good_data,partial_data_needs_review
+FM16,Interim8,Good data. matches well with d/s FM13.,good_data,no_action_continue_monitoring
+FM17,Interim8,"Good depth data, average/poor velocity data. Monitor removed.",bad_data,recommend_remove_or_relocate
+FM18,Interim8,"Good data - spills recorded. Telemetry downloaded, to be removed on next site visit",good_data,no_action_continue_monitoring
+FM21,Interim8,Good data.. Monitor removed.,good_data,no_action_continue_monitoring
+FM23,Interim8,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM27,Interim8,Good data. Monitor removed.,good_data,no_action_continue_monitoring
+FM29,Interim8,Good data,good_data,no_action_continue_monitoring
+FM30,Interim8,Monitor removed.,bad_data,recommend_remove_or_relocate
+FM31,Interim8,Left in to gather more data from reloacted FM156. Good data.,good_data,no_action_continue_monitoring
+FM33,Interim8,Left in to gather more data from reloacted FM156. Good data - records spills.,good_data,no_action_continue_monitoring
+FM37,Interim8,Good data. Monitor removed.,good_data,no_action_continue_monitoring
+FM45,Interim8,Good data. Velocity drop out towards end of interim.,good_data,no_action_continue_monitoring
+FM48,Interim8,Telemtry data downloaded. To be removed.,bad_data,recommend_remove_or_relocate
+FM49,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM51,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM54,Interim8,Telemtry data downloaded. To be removed.,bad_data,recommend_remove_or_relocate
+FM59,Interim8,Good velocity data but very low depth data. Monitor to be removed.,bad_data,recommend_remove_or_relocate
+FM60,Interim8,"Storm system, reacts to rainfall. To be removed.",bad_data,recommend_remove_or_relocate
+FM71,Interim8,Good data. Makes sense with u/s FM160,good_data,no_action_continue_monitoring
+FM72,Interim8,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+FM73,Interim8,Telemetry data downloaded. Velocity drop outs.,partial_good_data,partial_data_needs_review
+FM74,Interim8,Unable to access. Parked cars blocking room for setup,partial_good_data,partial_data_needs_review
+FM75,Interim8,Monitor removed.,bad_data,recommend_remove_or_relocate
+FM76,Interim8,Monitor removed.,bad_data,recommend_remove_or_relocate
+FM77,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM82,Interim8,Telemetry data downloaded. To be removed.,bad_data,recommend_remove_or_relocate
+FM83,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM84,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM85,Interim8,Reasonable data.,partial_good_data,partial_data_needs_review
+FM86,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM87,Interim8,Doesn't make sense with u/s FMs 85 and 86,partial_good_data,partial_data_needs_review
+FM88,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM90,Interim8,"Ok data, low flows. 1 good storm captured since installation of d/s FM161.",partial_good_data,partial_data_needs_review
+FM91,Interim8,"Ok data, low flows. 1 good storm captured since installation of d/s FM161.",partial_good_data,partial_data_needs_review
+FM93,Interim8,High level bifurcation. Minor spill recorded. 1 good storm captured since installation of d/s FM161.,partial_good_data,partial_data_needs_review
+FM94,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM95,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM97,Interim8,"Good depth data,  velocities dropped out.",partial_good_data,partial_data_needs_review
+FM98,Interim8,Good depth data. Poor velocity data.,partial_good_data,partial_data_needs_review
+FM99,Interim8,OK data. Very low DWF.,partial_good_data,partial_data_needs_review
+FM100,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM106,Interim8,Monitor removed.,bad_data,recommend_remove_or_relocate
+FM107,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM108,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM110,Interim8,Depth data unreliable (signficant increase from u/s FM111.,partial_good_data,partial_data_needs_review
+FM111,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM114,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM115,Interim8,Good data,good_data,no_action_continue_monitoring
+FM116,Interim8,Awaiting relocation (FM165),partial_good_data,partial_data_needs_review
+FM117,Interim8,Awaiting relocation (FM166),partial_good_data,partial_data_needs_review
+FM118,Interim8,"Good depth data, poor velocity data.",partial_good_data,partial_data_needs_review
+FM121,Interim8,Data ok. low depths.,partial_good_data,partial_data_needs_review
+FM124,Interim8,Data not provided.,partial_good_data,partial_data_needs_review
+FM125,Interim8,Poor data.,partial_good_data,partial_data_needs_review
+FM128,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM129,Interim8,Ok data. Low flow in DWF. Some ragging,bad_data,sensor_fault_or_ragging
+FM130,Interim8,Ok data. Low flow in DWF. Some ragging,bad_data,sensor_fault_or_ragging
+FM131,Interim8,Very poor data due to silt. Sensor adjusted - check next interim.,bad_data,sensor_fault_or_ragging
+FM132,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM133,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM134,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM135,Interim8,FM located on high level bifurcation. Spills recorded.,partial_good_data,partial_data_needs_review
+FM138,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM139,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM149,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM151,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM152,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM153,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM154,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM155,Interim8,Good data. Makes sense with u/s FM04.,good_data,no_action_continue_monitoring
+FM156,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM157,Interim8,Good data.,good_data,no_action_continue_monitoring
+FM158,Interim8,Awaiting data.,partial_good_data,partial_data_needs_review
+FM160,Interim8,Good data. Makes sense with d/s FM71,good_data,no_action_continue_monitoring
+FM161,Interim8,Good data. One good storm recorded.,good_data,no_action_continue_monitoring
+FM162,Interim8,Very poor depth data. Remove.,partial_good_data,partial_data_needs_review
+FM163,Interim8,Spill pipe. Records spill.,partial_good_data,partial_data_needs_review
+FM164,Interim8,Ok data.,partial_good_data,partial_data_needs_review
+DM01,Interim8,Telemetry data downloaded,partial_good_data,partial_data_needs_review
+DM02,Interim8,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+DM03,Interim8,Site visit required - unit does not dial in through the internet,bad_data,recommend_remove_or_relocate
+RG01,Interim8,OK,good_data,no_action_continue_monitoring
+RG02,Interim8,OK,good_data,no_action_continue_monitoring
+RG03,Interim8,Last storm (29/09) not picked up by RG03,partial_good_data,partial_data_needs_review
+RG04,Interim8,OK,good_data,no_action_continue_monitoring
+RG05,Interim8,Faulty data.,partial_good_data,partial_data_needs_review
+RG06,Interim8,OK,good_data,no_action_continue_monitoring
+RG07,Interim8,OK,good_data,no_action_continue_monitoring
+RG08,Interim8,OK,good_data,no_action_continue_monitoring
+RG09,Interim8,OK,good_data,no_action_continue_monitoring
+RG10,Interim8,OK,good_data,no_action_continue_monitoring
+RG11,Interim8,OK,good_data,no_action_continue_monitoring
+RG12,Interim8,OK,good_data,no_action_continue_monitoring
+RG13,Interim8,OK,good_data,no_action_continue_monitoring
+RG14,Interim8,OK,good_data,no_action_continue_monitoring
+RG15,Interim8,OK,good_data,no_action_continue_monitoring
+RG16,Interim8,OK,good_data,no_action_continue_monitoring
+FM03,Interim9,Continued poor data,bad_data,sensor_fault_or_ragging
+FM04,Interim9,Generally good data - some velocity drop out during storm event. Makes sense with d/s FM155.,good_data,no_action_continue_monitoring
+FM05,Interim9,Bifurcation - minor spills recorded.,partial_good_data,partial_data_needs_review
+FM09,Interim9,No data since 01/10 - site notes state site visit required,bad_data,recommend_remove_or_relocate
+FM10,Interim9,"Sudden drop in velocity data on 02/10, monitor significantly under-reading after this date when compared to rest of FS period.",partial_good_data,partial_data_needs_review
+FM11,Interim9,"Bifurcation - only spills during rainfall, does not appear to have operated during latest interim.",partial_good_data,partial_data_needs_review
+FM13,Interim9,"Good depth data, velocity drops out but good during storms.",partial_good_data,partial_data_needs_review
+FM14,Interim9,"Data okay during storms, data quality matches previous interims.",partial_good_data,partial_data_no_action
+FM15,Interim9,Low flows and negative depth values. Good diurnal pattern and storm response. ,partial_good_data,partial_data_needs_review
+FM16,Interim9,"Good velocity data, good depth during storms but some negative values during dry weather.",partial_good_data,partial_data_needs_review
+FM23,Interim9,Good data - slow response evident in velocity data.,good_data,no_action_continue_monitoring
+FM29,Interim9,Good data,good_data,no_action_continue_monitoring
+FM33,Interim9,To be removed,bad_data,recommend_remove_or_relocate
+FM45,Interim9,"Poor data during interim, data drop out throughout and poor velocity response during storm (06/10), depth data okay.",partial_good_data,partial_data_no_action
+FM48,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM49,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM51,Interim9,Good data for most of interim - some possible data drop out towards end? To be checked next interim.,good_data,no_action_continue_monitoring
+FM54,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM59,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM60,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM65,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM71,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM72,Interim9,Bifurcation - response to rainfall,partial_good_data,partial_data_needs_review
+FM73,Interim9,"Good depth data, continued velocity drop outs. Assess during next interim.",partial_good_data,partial_data_needs_review
+FM74,Interim9,Unable to access due to parked cars,partial_good_data,partial_data_needs_review
+FM77,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM82,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM83,Interim9,No data this interim from 30/09,bad_data,recommend_remove_or_relocate
+FM84,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM85,Interim9,Reasonable data.,partial_good_data,partial_data_needs_review
+FM86,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM87,Interim9,"Potential volume imbalance to u/s FMs 85 and 86 - ragged and flow is shallow, no alternatives.",partial_good_data,partial_data_needs_review
+FM88,Interim9,"Good data, surcharge evident.",good_data,no_action_continue_monitoring
+FM90,Interim9,Continued low flows - no additional storms during interim 9 - leave in for additional week / storm.,partial_good_data,partial_data_needs_review
+FM91,Interim9,"Continued low flows, data okay - minor additional storm during interim 9 - leave in for additional week / storm.",partial_good_data,partial_data_no_action
+FM93,Interim9,High level bifurcation - no more storms recorded in Interim 9.,partial_good_data,partial_data_needs_review
+FM94,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM95,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM97,Interim9,"Good depth data,  velocities dropped out.",partial_good_data,partial_data_needs_review
+FM98,Interim9,Good depth data. Poor velocity data.,partial_good_data,partial_data_needs_review
+FM99,Interim9,OK data. Very low DWF.,partial_good_data,partial_data_needs_review
+FM100,Interim9,"Good velocity data, depth data show drift throughout interim.",partial_good_data,partial_data_needs_review
+FM107,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM108,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM110,Interim9,"Continued high depths - unreliable, significant increase from u/s FM111",partial_good_data,partial_data_needs_review
+FM111,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM114,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM115,Interim9,Good data,good_data,no_action_continue_monitoring
+FM117,Interim9,Awaiting relocation (FM166),partial_good_data,partial_data_needs_review
+FM118,Interim9,"Good depth data, poor velocity data.",partial_good_data,partial_data_needs_review
+FM121,Interim9,Data ok. low depths.,partial_good_data,partial_data_needs_review
+FM124,Interim9,No data since 27/09,bad_data,recommend_remove_or_relocate
+FM125,Interim9,"Poor data, velocities dropping out and consistent negative depth data throughout interim.",partial_good_data,partial_data_needs_review
+FM128,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM129,Interim9,Ok data. Low flow in DWF. Some ragging,bad_data,sensor_fault_or_ragging
+FM130,Interim9,Ok data. Low flow in DWF. Some ragging,bad_data,sensor_fault_or_ragging
+FM131,Interim9,Removal requested,bad_data,recommend_remove_or_relocate
+FM132,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM133,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM134,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM135,Interim9,FM located on high level bifurcation - no spill recorded during interim.,partial_good_data,partial_data_needs_review
+FM138,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM139,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM146,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM149,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM151,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM152,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM153,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM154,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM155,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM156,Interim9,Awaiting removal.,partial_good_data,partial_data_needs_review
+FM157,Interim9,Good data.,good_data,no_action_continue_monitoring
+FM158,Interim9,Awaiting data - none since 25/09. FM being left in to capture one more storm.,partial_good_data,partial_data_needs_review
+FM159,Interim9,Removed,bad_data,recommend_remove_or_relocate
+FM160,Interim9,Awaiting removal.,partial_good_data,partial_data_needs_review
+FM161,Interim9,"Good data. No data after 03/10 so unable to tell if storm recorded on 06/10, leave FM in. ",good_data,no_action_continue_monitoring
+FM162,Interim9,Awaiting removal.,partial_good_data,partial_data_needs_review
+FM163,Interim9,"Spill pipe, no spills recorded this interim.",partial_good_data,partial_data_needs_review
+FM164,Interim9,No data this interim.,bad_data,recommend_remove_or_relocate
+DM01,Interim9,No data this interim.,bad_data,recommend_remove_or_relocate
+DM02,Interim9,Removed,bad_data,recommend_remove_or_relocate
+DM03,Interim9,Removed,bad_data,recommend_remove_or_relocate
+PL01,Interim9,Removed,bad_data,recommend_remove_or_relocate
+PL02,Interim9,Removed,bad_data,recommend_remove_or_relocate
+PL03,Interim9,Awaiting removal.,partial_good_data,partial_data_needs_review
+PL07,Interim9,Removed,bad_data,recommend_remove_or_relocate
+PL08,Interim9,Removed,bad_data,recommend_remove_or_relocate
+PL09,Interim9,Removed,bad_data,recommend_remove_or_relocate
+RG01,Interim9,OK,good_data,no_action_continue_monitoring
+RG02,Interim9,OK,good_data,no_action_continue_monitoring
+RG03,Interim9,Storm (06/10) not picked up by RG03.,partial_good_data,partial_data_needs_review
+RG04,Interim9,OK,good_data,no_action_continue_monitoring
+RG05,Interim9,Faulty data.,partial_good_data,partial_data_needs_review
+RG06,Interim9,OK,good_data,no_action_continue_monitoring
+RG07,Interim9,OK,good_data,no_action_continue_monitoring
+RG08,Interim9,OK,good_data,no_action_continue_monitoring
+RG09,Interim9,OK,good_data,no_action_continue_monitoring
+RG10,Interim9,OK,good_data,no_action_continue_monitoring
+RG11,Interim9,OK,good_data,no_action_continue_monitoring
+RG12,Interim9,OK,good_data,no_action_continue_monitoring
+RG13,Interim9,OK,good_data,no_action_continue_monitoring
+RG14,Interim9,OK,good_data,no_action_continue_monitoring
+RG15,Interim9,OK,good_data,no_action_continue_monitoring
+RG16,Interim9,OK,good_data,no_action_continue_monitoring
+FM03,Interim10,Continued poor data.,bad_data,sensor_fault_or_ragging
+FM04,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM05,Interim10,Bifurcation - no spills.,partial_good_data,partial_data_needs_review
+FM09,Interim10,Good data. Surcharged during storm.,good_data,no_action_continue_monitoring
+FM10,Interim10,Good data. Surcharged during storm.,good_data,no_action_continue_monitoring
+FM11,Interim10,Bifurcation - operates during storm events.,partial_good_data,partial_data_needs_review
+FM13,Interim10,FM16 > FM15 > FM13. FM16 and FM13 match well wrt flows but FM15 records much less flow.,partial_good_data,partial_data_needs_review
+FM14,Interim10,Very low flows.,partial_good_data,partial_data_needs_review
+FM15,Interim10,FM16 > FM15 > FM13. FM16 and FM13 match well wrt flows but FM15 records much less flow. Poor data at this monitor.,partial_good_data,partial_data_needs_review
+FM16,Interim10,FM16 > FM15 > FM13. FM16 and FM13 match well wrt flows but FM15 records much less flow.,partial_good_data,partial_data_needs_review
+FM23,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM29,Interim10,Good data. Evidence of slow response.,good_data,no_action_continue_monitoring
+FM32,Interim10,Data downloaded. Monitor removed,bad_data,recommend_remove_or_relocate
+FM33,Interim10,Data downloaded. Monitor removed,bad_data,recommend_remove_or_relocate
+FM45,Interim10,Velocity drop out at start of interim but improves after this. Evidence of surcharge during storm on 16/10. Evidence of slow response,partial_good_data,partial_data_needs_review
+FM49,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM51,Interim10,Velocity drop outs. Sensor cleaned.,bad_data,sensor_fault_or_ragging
+FM65,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM71,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM72,Interim10,Bifurcation - minor response to rainfall.,partial_good_data,partial_data_needs_review
+FM73,Interim10,"Good depth data. Velcocities improved after last clean. Dropped out again on 14/10, but sensor has been cleaned again.",partial_good_data,partial_data_needs_review
+FM74,Interim10,Data downloaded. Monitor removed,bad_data,recommend_remove_or_relocate
+FM77,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM83,Interim10,Velocities dropped out from 30/09 to 08/10. Data ok after this.,partial_good_data,partial_data_needs_review
+FM84,Interim10,Good data. Evidence of slow response.,good_data,no_action_continue_monitoring
+FM85,Interim10,Depths too low for accurate reading but no alternatives. Key site.,partial_good_data,partial_data_needs_review
+FM86,Interim10,Data seems ok. High velocities.,partial_good_data,partial_data_needs_review
+FM87,Interim10,Poor data - low velocities and depths. No alternativies. Key site.,partial_good_data,partial_data_needs_review
+FM88,Interim10,"Good data, surcharge evident.",good_data,no_action_continue_monitoring
+FM90,Interim10,Low flows. A few good storms now recorded with relocated FM161 so monitors around Glanowen CSO can be removed.,bad_data,recommend_remove_or_relocate
+FM91,Interim10,Low flows.,partial_good_data,partial_data_needs_review
+FM93,Interim10,Bifurcation - no flows recorded.,partial_good_data,partial_data_needs_review
+FM94,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM95,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM97,Interim10,"Good depth data, velocity drop outs. Evidence of surcharge.",partial_good_data,partial_data_needs_review
+FM98,Interim10,Good depth data. Poor velocity data.,partial_good_data,partial_data_needs_review
+FM99,Interim10,OK data. Very low DWF.,partial_good_data,partial_data_needs_review
+FM100,Interim10,Good data. Evidence of surcharge during storms.,good_data,no_action_continue_monitoring
+FM107,Interim10,Good data. (Volume balance with u/s FM147 but this monitor has now been removed).,good_data,no_action_continue_monitoring
+FM108,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM110,Interim10,Continued volume imbalance (signficant increase from FM111 to FM110).,partial_good_data,partial_data_needs_review
+FM111,Interim10,Continued volume imbalance (signficant increase from FM111 to FM110).,partial_good_data,partial_data_needs_review
+FM114,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM115,Interim10,"Velocity looks a bit patchy towards end of interim, but sensor has now been cleaned.",partial_good_data,partial_data_needs_review
+FM118,Interim10,"Good depth data, poor velocity data.",partial_good_data,partial_data_needs_review
+FM121,Interim10,Data ok. low depths.,partial_good_data,partial_data_needs_review
+FM124,Interim10,Poor data. Monitor swapped.,partial_good_data,partial_data_needs_review
+FM125,Interim10,Poor data through most of interim. Some storm response.,partial_good_data,partial_data_needs_review
+FM128,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM129,Interim10,Ok data. Low flow in DWF. Some ragging,bad_data,sensor_fault_or_ragging
+FM130,Interim10,Ok data. Low flow in DWF. Some ragging,bad_data,sensor_fault_or_ragging
+FM132,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM133,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM134,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM135,Interim10,Bifurcation. No spills recorded.,partial_good_data,partial_data_needs_review
+FM138,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM139,Interim10,Very low depths. Good velocities.,partial_good_data,partial_data_needs_review
+FM149,Interim10,Data ok but depths are low.,partial_good_data,partial_data_needs_review
+FM151,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM152,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM153,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM154,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM155,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM157,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM158,Interim10,No data.,bad_data,recommend_remove_or_relocate
+FM161,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM163,Interim10,"Spill pipe, no spills recorded this interim.",partial_good_data,partial_data_needs_review
+FM164,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM165,Interim10,Good data.,good_data,no_action_continue_monitoring
+FM166,Interim10,Good data.,good_data,no_action_continue_monitoring
+DM01,Interim10,Good data.,good_data,no_action_continue_monitoring
+RG01,Interim10,OK,good_data,no_action_continue_monitoring
+RG02,Interim10,OK,good_data,no_action_continue_monitoring
+RG03,Interim10,Rain Gauge swapped,partial_good_data,partial_data_needs_review
+RG04,Interim10,OK,good_data,no_action_continue_monitoring
+RG05,Interim10,OK,good_data,no_action_continue_monitoring
+RG06,Interim10,OK,good_data,no_action_continue_monitoring
+RG07,Interim10,OK,good_data,no_action_continue_monitoring
+RG08,Interim10,OK,good_data,no_action_continue_monitoring
+RG09,Interim10,OK,good_data,no_action_continue_monitoring
+RG10,Interim10,OK,good_data,no_action_continue_monitoring
+RG11,Interim10,OK,good_data,no_action_continue_monitoring
+RG12,Interim10,OK,good_data,no_action_continue_monitoring
+RG13,Interim10,OK,good_data,no_action_continue_monitoring
+RG14,Interim10,OK,good_data,no_action_continue_monitoring
+RG15,Interim10,OK,good_data,no_action_continue_monitoring
+RG16,Interim10,OK,good_data,no_action_continue_monitoring
+FM03,Interim11,Continued poor data.,bad_data,sensor_fault_or_ragging
+FM04,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM05,Interim11,Bifurcation - no spills.,partial_good_data,partial_data_needs_review
+FM09,Interim11,Good data. Surcharged during storm.,good_data,no_action_continue_monitoring
+FM10,Interim11,Good data. Surcharged during storm.,good_data,no_action_continue_monitoring
+FM11,Interim11,Bifurcation - operates during storm events.,partial_good_data,partial_data_needs_review
+FM13,Interim11,Good data. Surcharged during storm.,good_data,no_action_continue_monitoring
+FM14,Interim11,Low flows.,partial_good_data,partial_data_needs_review
+FM15,Interim11,Poor data,partial_good_data,partial_data_needs_review
+FM16,Interim11,Poor data from 18/10 - depths drop below 0.,partial_good_data,partial_data_needs_review
+FM23,Interim11,Velocity drops out at end of period. Sensor cleaned.,bad_data,sensor_fault_or_ragging
+FM29,Interim11,Good data. Evidence of slow response.,good_data,no_action_continue_monitoring
+FM45,Interim11,"Reasonable data, evidence of slow response, surcharge and back flow.",partial_good_data,partial_data_needs_review
+FM49,Interim11,Good data. Fast flow.,good_data,no_action_continue_monitoring
+FM51,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM65,Interim11,Good data. Fast flow.,good_data,no_action_continue_monitoring
+FM71,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM72,Interim11,Bifurcation - minor response to rainfall.,partial_good_data,partial_data_needs_review
+FM73,Interim11,Poor velocity data. sensor has been cleaned.,partial_good_data,partial_data_needs_review
+FM77,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM83,Interim11,Good data,good_data,no_action_continue_monitoring
+FM84,Interim11,"Good data. Surcharged, so unable to enter. Data downloaded",good_data,no_action_continue_monitoring
+FM85,Interim11,Depths too low for accurate reading but no alternatives. Key site.,partial_good_data,partial_data_needs_review
+FM86,Interim11,Data seems ok. High velocities.,partial_good_data,partial_data_needs_review
+FM87,Interim11,Improved data,partial_good_data,partial_data_needs_review
+FM88,Interim11,"Good data, surcharge evident. Fast flow.",good_data,no_action_continue_monitoring
+FM94,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM95,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM97,Interim11,"Good depth data, velocity drop outs. Sensor cleaned",bad_data,sensor_fault_or_ragging
+FM98,Interim11,Good depth data. Poor velocity data.,partial_good_data,partial_data_needs_review
+FM99,Interim11,Good data. Low flows.,good_data,no_action_continue_monitoring
+FM100,Interim11,Good data. Evidence of surcharge during storms.,good_data,no_action_continue_monitoring
+FM107,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM108,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM110,Interim11,Poor site,partial_good_data,partial_data_needs_review
+FM111,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM114,Interim11,Data ok.,partial_good_data,partial_data_needs_review
+FM115,Interim11,Jump in velocities,partial_good_data,partial_data_needs_review
+FM118,Interim11,"Good depth data, poor velocity data.",partial_good_data,partial_data_needs_review
+FM121,Interim11,Good data,good_data,no_action_continue_monitoring
+FM124,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM125,Interim11,Poor data. Unable to access - parked car.,partial_good_data,partial_data_needs_review
+FM128,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM129,Interim11,Ok data. Low flow in DWF. Some ragging. Sensor cleaned.,bad_data,sensor_fault_or_ragging
+FM130,Interim11,Poor data - very low flows,partial_good_data,partial_data_needs_review
+FM132,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM133,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM134,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM135,Interim11,Bifurcation. No spills recorded.,partial_good_data,partial_data_needs_review
+FM138,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM139,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM149,Interim11,Depth data looks suspect. Sensor cleaned from ragging and grease.,bad_data,sensor_fault_or_ragging
+FM151,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM152,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM153,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM154,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM155,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM157,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM158,Interim11,Reasonable data.,partial_good_data,partial_data_needs_review
+FM163,Interim11,"Spill pipe, no spills recorded this interim.",partial_good_data,partial_data_needs_review
+FM164,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM165,Interim11,Good data.,good_data,no_action_continue_monitoring
+FM166,Interim11,Good data.,good_data,no_action_continue_monitoring
+DM01,Interim11,Good data,good_data,no_action_continue_monitoring

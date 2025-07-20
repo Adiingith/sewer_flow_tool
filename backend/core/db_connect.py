@@ -6,8 +6,6 @@ from sqlalchemy.orm import sessionmaker
 
 settings = get_settings()
 
-print(f"Using database URL: {settings.DATABASE_URL}")
-
 # Async engine and session
 async_engine = create_async_engine(settings.DATABASE_URL, echo=False, pool_size=20, max_overflow=0)
 AsyncSessionLocal = async_sessionmaker(async_engine, expire_on_commit=False)

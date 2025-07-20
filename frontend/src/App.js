@@ -5,6 +5,7 @@ import { TopNavBar } from './components/Navigation';
 import HomePage from './pages/HomePage';
 import FleetOverview from './pages/FleetOverview';
 import DeviceDetail from './pages/DeviceDetail';
+import SettingsPage from './pages/SettingsPage';
 import { initToolbar } from '@stagewise/toolbar';
 
 let stagewiseToolbarInitialized = false;
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/fleet" element={<FleetOverview />} />
           <Route path="/devices/:id" element={<DeviceDetail />} />
+          <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </div>
     </BrowserRouter>

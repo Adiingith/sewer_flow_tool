@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 
-# 让 CRA 正确读取变量
+# CRA can read the variables
 COPY .env .env
 
 ENV HOST 0.0.0.0
@@ -15,11 +15,11 @@ ENV HOST 0.0.0.0
 CMD ["npm", "start"]
 
 
-# # 构建生产版本
+# # build production version
 # RUN npm run build || (echo "Build failed" && exit 1)
 
-# # 安装 serve 作为静态服务器
+# # install serve as static server
 # RUN npm install -g serve
 
-# # 启动生产服务器
+# # start production server
 # CMD ["serve", "-s", "build", "-l", "3000"]

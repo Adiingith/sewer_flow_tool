@@ -6,6 +6,9 @@ function ActionResponsibilityModal({ isOpen, onClose, selectedMonitors, onSave }
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [responsibilities, setResponsibilities] = useState([]);
+    // Add AI progress state
+    const [isAIPredicting, setIsAIPredicting] = useState(false);
+    const [aiProgress, setAiProgress] = useState({ current: 0, total: 1 });
 
     const fetchResponsibilities = useCallback(async () => {
         if (!isOpen || !selectedMonitors || selectedMonitors.length === 0) {
@@ -44,7 +47,7 @@ function ActionResponsibilityModal({ isOpen, onClose, selectedMonitors, onSave }
                 return {
                     monitor_id: monitor.id,
                     monitorName: monitor.monitor_name || 'N/A',
-                    action_type: '',
+                    action: '',
                     requester: '',
                     removal_checker: '',
                     removal_reviewer: '',
@@ -67,24 +70,46 @@ function ActionResponsibilityModal({ isOpen, onClose, selectedMonitors, onSave }
     const handleFieldChange = useCallback((monitorId, field, value) => {
         setResponsibilities(prev =>
             prev.map(item =>
-                item.monitor_id === monitorId ? { ...item, [field]: value } : item
+                item.monitor_id === monitorId
+                    ? {
+                        ...item,
+                        [field]: field === 'actions' ? wrapIfString(value, 'actions') : value
+                    }
+                    : item
             )
         );
     }, []);
     
+    // Utility to wrap string as object for JSON fields
+    const wrapIfString = (val, key) => {
+      if (val == null) return null;
+      if (typeof val === 'string') {
+        if (val.trim() === '') return null;
+        if (key === 'actions') return { actions: val };
+      }
+      return val;
+    };
+
     const handleSave = async () => {
         setLoading(true);
         setError(null);
 
+        // In handleSave, before sending to backend, wrap actions field for both toUpdate and toCreate
         const toUpdate = responsibilities
             .filter(item => item.id)
-            .map(({ monitorName, monitor_id, ...rest }) => rest);
+            .map(({ monitorName, ...rest }) => ({
+                ...rest,
+                actions: wrapIfString(rest.actions, 'actions'),
+            }));
 
         const toCreate = responsibilities
             .filter(item => 
-                !item.id && (item.action_type || item.requester || item.removal_checker || item.removal_reviewer || item.removal_date)
+                !item.id && (item.action || item.requester || item.removal_checker || item.removal_reviewer || item.removal_date)
             )
-            .map(({ id, monitorName, ...rest }) => rest);
+            .map(({ id, monitorName, ...rest }) => ({
+                ...rest,
+                actions: wrapIfString(rest.actions, 'actions'),
+            }));
 
         try {
             await onSave({ toUpdate, toCreate });
@@ -93,6 +118,45 @@ function ActionResponsibilityModal({ isOpen, onClose, selectedMonitors, onSave }
             setError(err.message || 'Failed to save changes.');
         } finally {
             setLoading(false);
+        }
+    };
+
+    // Add AI Predict Action handler
+    const handleAIPredict = async () => {
+        setIsAIPredicting(true);
+        setAiProgress({ current: 0, total: 1 });
+        setError(null);
+        try {
+            const apiUrl = process.env.REACT_APP_API_BASE || '';
+            const monitorIds = selectedMonitors.map(m => m.monitor_id || m.id || m);
+            // Improved progress bar animation: max 95% until done
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += 0.03; // 3% per tick
+                if (progress < 0.95) {
+                    setAiProgress({ current: progress, total: 1 });
+                }
+            }, 200);
+            const response = await fetch(`${apiUrl}/api/v1/ai/predict-action`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(monitorIds)
+            });
+            clearInterval(progressInterval);
+            setAiProgress({ current: 1, total: 1 }); // jump to 100%
+            if (!response.ok) throw new Error('AI prediction failed.');
+            const data = await response.json();
+            // Check for missing data or errors in results
+            const missing = (data.results || []).filter(r => r.error);
+            if (missing.length > 0) {
+                alert(missing.map(m => `${m.monitor_id}: ${m.error}`).join('\n'));
+            } else {
+                await fetchResponsibilities();
+            }
+        } catch (err) {
+            setError(err.message || 'AI prediction failed.');
+        } finally {
+            setIsAIPredicting(false);
         }
     };
 
@@ -107,7 +171,18 @@ function ActionResponsibilityModal({ isOpen, onClose, selectedMonitors, onSave }
                         <X size={24} />
                     </button>
                 </div>
-                
+                {/* AI Predict Progress Bar */}
+                {isAIPredicting && (
+                  <div className="w-full flex items-center space-x-2 my-2">
+                    <div className="flex-1 h-2 bg-gray-200 rounded">
+                      <div
+                        className="h-2 bg-blue-500 rounded"
+                        style={{ width: `${Math.min((aiProgress.current / aiProgress.total) * 100, 100)}%` }}
+                      ></div>
+                    </div>
+                    <span className="text-sm text-gray-600 min-w-max">{`AI predicting...`}</span>
+                  </div>
+                )}
                 {loading && <p className="text-center">Loading...</p>}
                 {error && <div className="my-3 p-3 bg-red-100 text-red-700 rounded text-center">{error}</div>}
 
@@ -136,9 +211,17 @@ function ActionResponsibilityModal({ isOpen, onClose, selectedMonitors, onSave }
                 </div>
 
                 <div className="pt-4 mt-auto flex justify-end space-x-2">
+                    {/* AI Predict Action button - same style as Save All */}
+                    <button 
+                        onClick={handleAIPredict}
+                        disabled={loading || isAIPredicting} 
+                        className="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400"
+                    >
+                        AI Predict Action
+                    </button>
                     <button 
                         onClick={handleSave} 
-                        disabled={loading} 
+                        disabled={loading || isAIPredicting} 
                         className="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400"
                     >
                         {loading ? 'Saving...' : 'Save All'}

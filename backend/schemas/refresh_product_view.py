@@ -14,7 +14,7 @@ async def refresh_product_view():
             await session.rollback()
 
 def refresh_product_view_sync():
-    """同步包装器，用于调度器调用"""
+    """Synchronization wrapper, used for scheduler"""
     asyncio.run(refresh_product_view())
 
 def start_scheduler():

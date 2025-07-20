@@ -13,8 +13,8 @@ const ResponsibilityCheckRow = React.memo(({ responsibility, onFieldChange }) =>
             <td className="px-2 py-1">
                 <input 
                     type="text" 
-                    value={responsibility.action_type || ''} 
-                    onChange={(e) => handleInputChange('action_type', e.target.value)} 
+                    value={responsibility.action || ''} 
+                    onChange={(e) => handleInputChange('action', e.target.value)} 
                     className={inputClass} 
                 />
             </td>

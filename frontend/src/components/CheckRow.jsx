@@ -2,7 +2,7 @@ import React from 'react';
 
 const CheckRow = React.memo(({ check, handleInputChange }) => {
   const inputClass = "mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm";
-  const selectClass = "mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md";
+  const selectClass = "mt-1 block w-full min-w-[60px] pl-3 pr-6 py-2 text-xs border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md";
 
   return (
     <tr>

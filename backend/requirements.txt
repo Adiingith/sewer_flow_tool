@@ -30,3 +30,4 @@ onnx
 onnxruntime
 scikit-learn
 skl2onnx
+scipy               # signal processing for storm event detection

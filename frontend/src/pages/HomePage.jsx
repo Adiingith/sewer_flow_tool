@@ -192,7 +192,7 @@ function HomePage() {
                <input
                  type="file"
                  multiple
-                 accept=".csv,.xlsm,.xlsx,.xls,.fdv"
+                 accept=".csv,.xlsm,.xlsx,.xls,.fdv,.r"
                  onChange={handleFileChange}
                  ref={fileInputRef}
                  className="hidden"
@@ -216,7 +216,7 @@ function HomePage() {
                      style={{ width: `${(batchProgress.current / batchProgress.total) * 100}%` }}
                    ></div>
                  </div>
-                 <span className="text-sm text-gray-600 min-w-max">{`正在上传 ${batchProgress.current} / ${batchProgress.total}`}</span>
+                <span className="text-sm text-gray-600 min-w-max">{` ${batchProgress.current} / ${batchProgress.total}`}</span>
                </div>
              )}
 

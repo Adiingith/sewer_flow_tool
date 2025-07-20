@@ -1,45 +1,65 @@
-# Configuration class for signal rule engine thresholds
-# All threshold values and rule parameters are managed here for easy maintenance and extension.
+# Configuration for signal-based fault detection in sewer monitoring
+# All thresholds are calibrated based on 2-minute interval data (30 points per hour)
 
 class SignalRuleConfig:
-    # Depth signal thresholds
-    DEPTH_NOISE_THRESHOLD = 3  # mm, small negative values within [-3, 0) are considered minor noise
-    DEPTH_BAD_SEGMENT_MIN_POINTS = 3  # minimum consecutive points to consider as a bad segment (for future use)
-    DEPTH_MIN = 0  # mm, physical lower bound
-    DEPTH_MAX = 5000  # mm, physical upper bound (adjust as needed)
+    # Maximum allowed count of negative velocity readings before flagging as faulty
+    NEG_VELOCITY_MAX_COUNT = 70
 
-    # Velocity signal thresholds
-    VELOCITY_MIN = 0  # m/s, physical lower bound
-    VELOCITY_MAX = 10  # m/s, physical upper bound
-    VELOCITY_FLAT_STD = 0.01  # m/s, std below this means flat signal
+    # Maximum allowed count of zero velocity readings before flagging
+    ZERO_VELOCITY_MAX_COUNT = 5000
 
-    # Flow signal thresholds
-    FLOW_MIN = 0  # L/s, physical lower bound
-    FLOW_MAX = 300  # L/s, physical upper bound
-    FLOW_NO_DWF = 0.01  # L/s, below this means no dry weather flow
+    # Thresholds for identifying flat-line (platform) behavior in data
+    VELOCITY_CONST_STD_THRESH = 0.005  # m/s
+    DEPTH_CONST_STD_THRESH = 0.5       # mm
 
-    # No storm response rule
-    NO_STORM_STD_THRESH = 0.005  # depth std below this means no response
-    NO_STORM_RAIN_THRESH = 10    # rainfall above this triggers storm response check
+    # If velocity stays at zero for more than this count, mark as fault
+    ZERO_VELOCITY_DURATION = 60  # = 120 minutes
 
-    # Scatter pattern rule
-    SCATTER_IQR_THRESH = 0.5     # IQR/mean above this means scatter pattern
+    # Platform behavior thresholds
+    VELOCITY_PLATFORM_STD = 0.005
+    VELOCITY_PLATFORM_DURATION = 60  # 120 minutes = 60 × 2min
+    DEPTH_PLATFORM_STD = 0.5
+    DEPTH_PLATFORM_DURATION = 60     # 120 minutes
 
-    # Sensor drift rule
-    DRIFT_WINDOW = 48            # rolling window size for drift detection
-    DRIFT_THRESH = 0.2           # max rolling mean diff above this means drift
+    # Step jump detection: sudden change followed by a stable state
+    STEP_JUMP_THRESH = 10.0  # mm or mm/s
+    STEP_JUMP_STABLE_DURATION = 60  # = 120 minutes
+    STEP_JUMP_STABLE_STD = 0.5
 
-    # Step change rule
-    STEP_CHANGE_THRESH = 0.1     # max diff between consecutive points
+    # Extremely high velocity or depth detection
+    HIGH_VELOCITY_THRESH = 2.5  # m/s
+    HIGH_DEPTH_THRESH = 1200.0  # mm
 
-    # No DWF + scatter rule
-    NO_DWF_SCATTER_STD_THRESH = 0.05  # std above this with low flow means scatter
+    # Inconsistent data: zero depth with high velocity
+    ZERO_DEPTH_HIGH_VELOCITY_THRESH = 0.3  # m/s
 
-    # Steep pipe rule
-    STEEP_PIPE_VEL_THRESH = 1.0  # mean velocity above this
-    STEEP_PIPE_FLOW_THRESH = 0.1 # mean flow below this
+    # Rain gauge tipping bucket stuck detection (e.g., rainfall fixed at 5mm)
+    RG_STUCK_RAINFALL_THRESH = 3.0  # mm
 
-    # No clear profile rule
-    NO_PROFILE_STD_THRESH = 0.01  # std below this means no clear diurnal/profile
 
-    # Add more thresholds and parameters as needed for other rules 
+    
+    # RG physical maximum value (overflow detection)
+    RG_MAX_VALUE = 1000.0  # mm
+    
+    # Extreme rainfall detection thresholds
+    RG_EXTREME_RAINFALL_THRESH = 50.0  # mm per 2-minute interval
+    RG_EXTREME_RAINFALL_DURATION = 5    # = 6 minutes of extreme rainfall
+
+    # Negative depth graded thresholds
+    # >= CRITICAL_THRESHOLD: unusable, < HIGH_THRESHOLD: usable
+    NEG_DEPTH_CRITICAL_THRESHOLD = 5000  # Critical level - unusable
+    NEG_DEPTH_HIGH_THRESHOLD = 500      # High level - usable_with_warning
+
+    # Maximum expected valid depth in mm
+    DEPTH_MAX = 2000.0
+
+    # Minimum expected valid depth in mm
+    DEPTH_MIN = -20  # Minimum allowed depth (mm), set according to business/physical requirements
+
+    
+    # Standard deviation thresholds for considering data as 'unstable'
+    VELOCITY_QUALITY_STD_THRESHOLD = 0.1  # m/s - threshold for velocity instability
+    DEPTH_QUALITY_STD_THRESHOLD = 0.05    # m - threshold for depth instability
+    
+    # Back segment stability factor (back_std must be < threshold * this factor)
+    BACK_SEGMENT_STABILITY_FACTOR = 0.5   # Back segment must be twice as stable

@@ -19,15 +19,15 @@ if config.config_file_name is not None:
 # import all models
 try:
     from backend.models.base import Base 
-    
+   
 
-    import backend.models.measurement
-    import backend.models.monitor
-    import backend.models.presiteInstallCheck
-    import backend.models.StormEvent
-    import backend.models.DryDayEvent
-    import backend.models.WeeklyQualityCheck
-    import backend.models.ActionResponsibility
+    from backend.models.measurement import Measurement
+    from backend.models.rain_gauge import RainGauge
+    from backend.models.monitor import Monitor
+    from backend.models.presiteInstallCheck import PresiteInstallCheck
+    from backend.models.weatherEvent import WeatherEvent
+    from backend.models.WeeklyQualityCheck import WeeklyQualityCheck
+    from backend.models.ActionResponsibility import ActionResponsibility
     
     target_metadata = Base.metadata
     print("Successfully imported models")

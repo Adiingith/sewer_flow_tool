@@ -13,5 +13,8 @@ class WeeklyQualityCheck(Base):
     comments = Column(JSON)
     actions = Column(JSON)
     interim = Column(Text)
+    data_quality_check = Column(Text)
+    device_status = Column(String, nullable=True)
+    device_status_reason = Column(Text, nullable=True)
 
     monitor = relationship("Monitor", back_populates="weekly_checks")

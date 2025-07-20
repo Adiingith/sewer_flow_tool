@@ -1,23 +1,13 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { 
   Search, 
-  Filter, 
-  Download, 
-  Eye, 
-  AlertTriangle, 
-  CheckCircle, 
-  XCircle,
-  ArrowUp,
-  ArrowDown,
-  MapPin,
   ChevronLeft,
   ChevronRight,
   ClipboardCheck,
   CalendarCheck,
   ClipboardEdit
 } from 'lucide-react';
-import { LineChart, Line, ResponsiveContainer } from 'recharts';
 import PresiteInstallCheckModal from './PresiteInstallCheckModal';
 import WeeklyQualityCheckModal from './WeeklyQualityCheckModal';
 import ActionResponsibilityModal from './ActionResponsibilityModal';
@@ -162,10 +152,6 @@ function DeviceTable({
     navigate(`/devices/${deviceId}`);
   };
 
-  const handleActionClick = (e) => {
-    e.stopPropagation(); // Prevent row click when clicking action buttons
-  };
-
   const handleOpenActionModal = () => {
     fetchMonitorsAndOpenModal('action');
   };
@@ -287,10 +273,10 @@ function DeviceTable({
 
       {/* Table content */}
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
+        <table className="min-w-full divide-y divide-gray-200 table-fixed">
           <thead className="bg-gray-50">
             <tr>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 w-12">
                 <input
                   type="checkbox"
                   ref={masterCheckboxRef}
@@ -298,38 +284,35 @@ function DeviceTable({
                   onChange={handleSelectAll}
                 />
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-20">
                 FM / DM / PL
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
                 Install Date
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-20">
                 W3W
               </th>
               <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Location
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-28">
                 MH Reference
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-16">
                 Pipe
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Height (mm)
-              </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Width (mm)
-              </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-16">
                 Shape
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Depth (mm)
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-28">
+                Dimensions (mm)
               </th>
-              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Actioned
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
+                Status
+              </th>
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-32">
+                Action
               </th>
             </tr>
           </thead>
@@ -354,11 +337,32 @@ function DeviceTable({
                     <td className="px-3 py-3 italic">scrapped</td>
                     <td className="px-3 py-3 italic">scrapped</td>
                     <td className="px-3 py-3 italic">scrapped</td>
-                    <td className="px-3 py-3 italic">scrapped</td>
-                    <td className="px-3 py-3 italic">scrapped</td>
+                    <td className="px-3 py-3 italic">
+                      <div className="truncate">scrapped</div>
+                    </td>
                   </tr>
                 );
               }
+
+              // status color mapping
+              const getStatusColor = (status) => {
+                switch (status?.toLowerCase()) {
+                  case 'active':
+                    return 'bg-green-100 text-green-800';
+                  case 'warning':
+                    return 'bg-yellow-100 text-yellow-800';
+                  case 'error':
+                    return 'bg-red-100 text-red-800';
+                  default:
+                    return 'bg-gray-100 text-gray-800';
+                }
+              };
+
+              // merge dimensions
+              const dimensions = [device.height, device.width, device.depth]
+                .filter(dim => dim && dim !== '')
+                .join(' - ');
+
               return (
                 <tr
                   key={device.id}
@@ -381,11 +385,23 @@ function DeviceTable({
                   <td className="px-3 py-3">{device.location}</td>
                   <td className="px-3 py-3">{device.mhReference}</td>
                   <td className="px-3 py-3">{device.pipe}</td>
-                  <td className="px-3 py-3">{device.height}</td>
-                  <td className="px-3 py-3">{device.width}</td>
                   <td className="px-3 py-3">{device.shape}</td>
-                  <td className="px-3 py-3">{device.depth}</td>
-                  <td className="px-3 py-3 bg-yellow-100 font-semibold">{device.actioned}</td>
+                  <td className="px-3 py-3" title={`Height: ${device.height || '-'} | Width: ${device.width || '-'} | Depth: ${device.depth || '-'}`}>
+                    {dimensions || '-'}
+                  </td>
+                  <td className="px-3 py-3">
+                    <span className={`px-2 py-1 text-xs font-medium rounded-full ${getStatusColor(device.status)}`}>
+                      {device.status || 'Unknown'}
+                    </span>
+                  </td>
+                  <td className="px-3 py-3 bg-yellow-100 font-semibold">
+                    <div 
+                      className="truncate cursor-help" 
+                      title={device.action || ''}
+                    >
+                      {device.action}
+                    </div>
+                  </td>
                 </tr>
               );
             })}

@@ -8,6 +8,65 @@ from typing import List, Dict, Any, Tuple, Optional
 from fastapi import UploadFile
 import math
 from datetime import datetime
+from backend.services.time_series_processor import TimeSeriesProcessor
+from sqlalchemy import select, func, cast, Integer
+
+async def get_max_interim(db, table, monitor_id_field, monitor_id):
+    # First, get all distinct interim values for this monitor
+    distinct_query = (
+        select(table.interim)
+        .where(getattr(table, monitor_id_field) == monitor_id)
+        .distinct()
+    )
+    result = await db.execute(distinct_query)
+    interim_values = [row[0] for row in result.fetchall()]
+    
+    if not interim_values:
+        return None
+    
+    # Extract numeric parts and find the maximum
+    max_num = 0
+    max_interim = None
+    
+    for interim in interim_values:
+        # Extract numeric part from interim (e.g., "Interim1" -> 1, "Interim2" -> 2)
+        import re
+        match = re.search(r'\d+', interim)
+        if match:
+            num = int(match.group())
+            if num > max_num:
+                max_num = num
+                max_interim = interim
+    
+    return max_interim
+
+def ensure_actions_is_object(val, old_val=None):
+    """
+    Ensures the actions field is always a JSON object with the correct structure.
+    If val is a string, wraps it as {"actions": val}.
+    If val is a dict, returns as is.
+    If val is None, returns None.
+    Otherwise, coerces to string and wraps.
+    
+    Args:
+        val: The new value to process
+        old_val: The existing value (for update operations). If provided and val is a string,
+                the string will be merged into the existing object as {"actions": val}
+    """
+    if val is None:
+        return None
+    if isinstance(val, str):
+        if old_val and isinstance(old_val, dict):
+            # For updates: merge the new string into existing object
+            result = old_val.copy()
+            result["actions"] = val
+            return result
+        else:
+            # For creates: create new object
+            return {"actions": val}
+    if isinstance(val, dict):
+        return val
+    return {"actions": str(val)}
 
 class DataProcessor:
     def __init__(self, config_path='backend/schemas/column_mappings.yaml'):
@@ -139,10 +198,15 @@ class DataProcessor:
             return config.get('default')
 
     async def process_file(self, file: UploadFile, model_type: str, area: str) -> List[Dict[str, Any]]:
+        # Save to minIO
+        ts_processor = TimeSeriesProcessor()
+        minio_file_url, minio_object_name = await ts_processor.save_file(file, area, model_type)
+        # Re-read file content (because file has been read after save_file)
+        file.file.seek(0)
         file_content = BytesIO(await file.read())
         filename = file.filename.lower()
         
-        file_type = 'csv' if filename.endswith('.csv') else 'excel' if filename.endswith(('.xlsx', '.xls')) else None
+        file_type = 'csv' if filename.endswith('.csv') else 'excel' if filename.endswith(('.xlsx', '.xls','.xlsm')) else None
         if file_type is None:
             raise ValueError("Unsupported file type")
 
@@ -167,8 +231,8 @@ class DataProcessor:
             if not monitor_id_val:
                 continue # Skip rows with any form of empty monitor_id
             
-            # Rule: check if monitor_id is a combination of letters and numbers
-            if not re.match(r'^[a-zA-Z0-9]+$', str(monitor_id_val)):
+            # Rule: monitor_id must be a combination of letters and numbers (e.g. PL01, FM25)
+            if not re.match(r'^[a-zA-Z]+[0-9]+$', str(monitor_id_val)):
                 continue
 
             # Rule 1: Special handling for 'scrapped' devices.
@@ -215,4 +279,5 @@ class DataProcessor:
             if is_row_valid:
                 processed_data.append(record)
             
+        # Only return processed data, not minIO information
         return processed_data 

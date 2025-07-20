@@ -13,6 +13,5 @@ class ActionResponsibility(Base):
     removal_checker = Column(Text)
     removal_reviewer = Column(Text)
     removal_date = Column(TIMESTAMP(timezone=True))
-    action_type = Column(Text)
 
     monitor = relationship("Monitor", back_populates="responsibilities")

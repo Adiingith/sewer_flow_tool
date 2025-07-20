@@ -9,6 +9,7 @@ from backend.models.WeeklyQualityCheck import WeeklyQualityCheck
 from backend.models.monitor import Monitor
 from backend.schemas.checkSchemas import PresiteInstallCheckCreate, PresiteInstallCheckRead, WeeklyQualityCheckCreate, WeeklyQualityCheckRead, WeeklyQualityCheckUpdate
 from backend.core.db_connect import get_session
+from backend.services.data_processor import ensure_actions_is_object
 
 
 router = APIRouter()
@@ -127,13 +128,13 @@ async def create_weekly_quality_check(check: WeeklyQualityCheckCreate, db: Async
     check_dict = check.dict()
     if isinstance(check_dict.get('comments'), str) and check_dict['comments'].strip():
         check_dict['comments'] = {"notes": check_dict['comments']}
+    elif isinstance(check_dict.get('comments'), dict) and 'notes' in check_dict['comments']:
+        # Already wrapped by frontend, keep as is
+        pass
     else:
         check_dict['comments'] = None
     
-    if isinstance(check_dict.get('actions'), str) and check_dict['actions'].strip():
-        check_dict['actions'] = {"actions": check_dict['actions']}
-    else:
-        check_dict['actions'] = None
+    check_dict['actions'] = ensure_actions_is_object(check_dict.get('actions'))
 
     db_check = WeeklyQualityCheck(**check_dict)
     db.add(db_check)
@@ -155,14 +156,14 @@ async def create_batch_weekly_checks(checks: List[WeeklyQualityCheckCreate], db:
         # Standardize comments
         if isinstance(check_dict.get('comments'), str) and check_dict['comments'].strip():
             check_dict['comments'] = {"notes": check_dict['comments']}
+        elif isinstance(check_dict.get('comments'), dict) and 'notes' in check_dict['comments']:
+            # Already wrapped by frontend, keep as is
+            pass
         else:
             check_dict['comments'] = None
         
         # Standardize actions
-        if isinstance(check_dict.get('actions'), str) and check_dict['actions'].strip():
-            check_dict['actions'] = {"actions": check_dict['actions']}
-        else:
-            check_dict['actions'] = None
+        check_dict['actions'] = ensure_actions_is_object(check_dict.get('actions'))
 
         db_check = WeeklyQualityCheck(**check_dict)
         db.add(db_check)
@@ -293,6 +294,21 @@ async def update_weekly_quality_check(check_id: int, check_update: WeeklyQuality
         raise HTTPException(status_code=404, detail="Weekly quality check not found")
 
     update_data = check_update.model_dump(exclude_unset=True)
+    
+    # Handle comments field
+    if 'comments' in update_data:
+        if isinstance(update_data['comments'], str) and update_data['comments'].strip():
+            update_data['comments'] = {"notes": update_data['comments']}
+        elif isinstance(update_data['comments'], dict) and 'notes' in update_data['comments']:
+            # Already wrapped by frontend, keep as is
+            pass
+        else:
+            update_data['comments'] = None
+    
+    # Handle actions field with old value for proper merging
+    if 'actions' in update_data:
+        old_actions = db_check.actions
+        update_data['actions'] = ensure_actions_is_object(update_data.get('actions'), old_actions)
     
     for key, value in update_data.items():
         setattr(db_check, key, value)

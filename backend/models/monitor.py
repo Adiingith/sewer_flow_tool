@@ -21,11 +21,12 @@ class Monitor(Base):
     shape = Column(Text)
     depth_mm = Column(Integer)
     status = Column(String, nullable=False)
+    status_reason = Column(Text, nullable=True)
+    assigned_rain_gauge_id = Column(Integer, nullable=True)  
 
     # relationships
     install_checks = relationship("PresiteInstallCheck", back_populates="monitor")
     weekly_checks = relationship("WeeklyQualityCheck", back_populates="monitor")
-    storm_events = relationship("StormEvent", back_populates="monitor")
-    dry_days = relationship("DryDayEvent", back_populates="monitor")
     responsibilities = relationship("ActionResponsibility", back_populates="monitor")
     measurements = relationship("Measurement", back_populates="monitor")
+    rain_gauges = relationship("RainGauge", back_populates="monitor")

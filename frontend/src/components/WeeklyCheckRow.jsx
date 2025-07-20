@@ -5,8 +5,8 @@ const WeeklyCheckRow = React.memo(({ check, handleInputChange, handleRemoveNewCh
   const inputClass = "block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm";
   const readOnlyClass = "px-4 py-2 whitespace-nowrap bg-gray-50 text-gray-700";
   
-  const commentsValue = (check.comments && typeof check.comments === 'object') ? check.comments.notes : check.comments;
-  const actionsValue = (check.actions && typeof check.actions === 'object') ? check.actions.actions : check.actions;
+  const commentsValue = (check.comments && typeof check.comments === 'object' && check.comments.notes !== undefined) ? check.comments.notes : (check.comments || '');
+  const actionsValue = (check.actions && typeof check.actions === 'object' && check.actions.actions !== undefined) ? check.actions.actions : (check.actions || '');
 
   return (
     <tr className="bg-blue-50 hover:bg-blue-100">
@@ -44,6 +44,15 @@ const WeeklyCheckRow = React.memo(({ check, handleInputChange, handleRemoveNewCh
           rows="2" 
           className={`${inputClass} w-full`}
           placeholder="Enter actions...">
+        </textarea>
+      </td>
+      <td className="px-4 py-1 align-top">
+        <textarea 
+          value={check.data_quality_check || ''} 
+          onChange={(e) => handleInputChange(check.monitor_id, check.interim, 'data_quality_check', e.target.value)} 
+          rows="2" 
+          className={`${inputClass} w-full`}
+          placeholder="Enter data quality check...">
         </textarea>
       </td>
       <td className="px-4 py-1 align-middle text-center">
