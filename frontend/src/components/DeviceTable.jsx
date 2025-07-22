@@ -12,7 +12,7 @@ import PresiteInstallCheckModal from './PresiteInstallCheckModal';
 import WeeklyQualityCheckModal from './WeeklyQualityCheckModal';
 import ActionResponsibilityModal from './ActionResponsibilityModal';
 
-function Pagination({ currentPage, totalPages, onPageChange }) {
+function Pagination({ itemsPerPage, currentPage, totalPages, handleItemsPerPageChange, onPageChange }) {
   if (totalPages <= 1) return null;
 
   return (
@@ -25,7 +25,19 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
         <ChevronLeft className="w-5 h-5" />
       </button>
       <span className="text-sm text-gray-700">
-        Page {currentPage} of {totalPages}
+        Page {currentPage} of {totalPages}, Items per page:
+        <select
+            id="itemsPerPage"
+            value={itemsPerPage}
+            onChange={(e) => handleItemsPerPageChange(parseInt(e.target.value))}
+            className="px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+        >
+            {[8, 16, 32, 64, 100].map(size => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+            ))}
+        </select>
       </span>
       <button
         onClick={() => onPageChange(currentPage + 1)}
@@ -40,10 +52,12 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
 
 function DeviceTable({ 
   devices, 
-  loading = false, 
+  loading = false,
+  itemsPerPage = 8,
   currentPage, 
   totalPages, 
   onPageChange,
+  handleItemsPerPageChange,
   selectedDevices,
   onSelectionChange
 }) {
@@ -61,8 +75,8 @@ function DeviceTable({
       const searchTermLower = searchTerm.toLowerCase();
       const matchesSearch = searchTerm === '' || 
         device.name.toLowerCase().includes(searchTermLower) ||
-        device.location.toLowerCase().includes(searchTermLower) ||
-        device.mhReference.toLowerCase().includes(searchTermLower);
+        device.location?.toLowerCase().includes(searchTermLower) ||
+        device.mhReference?.toLowerCase().includes(searchTermLower);
       
       const matchesStatus = statusFilter === 'all' || device.status === statusFilter;
 
@@ -417,7 +431,7 @@ function DeviceTable({
       )}
       
       <div className="px-4 py-3 border-t border-gray-200">
-        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
+        <Pagination itemsPerPage={itemsPerPage} currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} handleItemsPerPageChange={handleItemsPerPageChange} />
       </div>
 
       {isPresiteModalOpen && (
