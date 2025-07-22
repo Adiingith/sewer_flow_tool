@@ -34,7 +34,8 @@ function FleetOverview() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [selectedDevices, setSelectedDevices] = useState([]);
-  const itemsPerPage = 8;
+  const [itemsPerPage, setItemsPerPage] = useState(8);
+  // const itemsPerPage = 8;
 
   // State for the new dashboard data
   const [summaryData, setSummaryData] = useState(null);
@@ -95,13 +96,20 @@ function FleetOverview() {
 
     Promise.all([fetchDashboardData(), fetchDevices(currentPage)]).finally(() => setLoading(false));
 
-  }, [currentPage]);
+  }, [currentPage, itemsPerPage]);
 
   const handlePageChange = (newPage) => {
     if (newPage > 0 && newPage <= totalPages) {
       setCurrentPage(newPage);
     }
   };
+
+    const handleItemsPerPageChange = (newItemsPerPage) => {
+        if (newItemsPerPage > 0 && newItemsPerPage <= 100) {
+            setItemsPerPage(newItemsPerPage);
+            setCurrentPage(1); // Reset to first page when items per page changes
+        }
+    };
 
   const handleExportCSV = () => {
   };
@@ -244,7 +252,9 @@ function FleetOverview() {
                 selectedDevices={selectedDevices}
                 currentPage={currentPage}
                 totalPages={totalPages}
+                itemsPerPage={itemsPerPage}
                 onPageChange={handlePageChange}
+                handleItemsPerPageChange={handleItemsPerPageChange}
             />
         </div>
       </div>
