@@ -6,7 +6,7 @@ services:
     container_name: backend
     ports:
       - "8000:8000"   # FastAPI
-      - "5000:5000"   # MLflow UI
+      - "5002:5000"   # MLflow UI
     volumes:
       - ./backend:/app/backend
     env_file:
