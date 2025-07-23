@@ -12,8 +12,12 @@ from backend.models.WeeklyQualityCheck import WeeklyQualityCheck
 from backend.models.weatherEvent import WeatherEvent
 from backend.services.signal_rule_engine import process_all_rules
 from backend.services.storm_event_selector import StormEventSelector
+from backend.machine_learning.inference.predictor import predict_storm_response
 import re
+import logging
 from sqlalchemy import func, delete
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
@@ -44,9 +48,9 @@ async def ai_predict_action(
             for m in monitor_ids
         ]}
     
-    # Extract numeric part and sort
+    # Extract numeric part and sort (format: Interim1, Interim2, etc.)
     def extract_interim_number(interim):
-        match = re.search(r'(\d+)$', interim)
+        match = re.search(r'Interim(\d+)', interim, re.IGNORECASE)
         return int(match.group(1)) if match else -1
     interim_list_sorted = sorted(interim_list, key=extract_interim_number, reverse=True)
     latest_interim = interim_list_sorted[0]
@@ -297,9 +301,32 @@ async def ai_predict_action(
             # 7. TODO: Dry day event extraction (leave blank for now)
             dry_day_events = []  # TODO: implement dry day event extraction
 
-            # 8. TODO: AI model prediction for action/suggestion (leave blank for now)
-            ai_predicted_action = None  # TODO: call AI model
-            ai_suggestion = None        # TODO: call AI model
+            # 8. AI model prediction for storm response classification
+            ai_predicted_action = None
+            ai_suggestion = None
+            
+            try:
+                # Call T-GNN model for storm response prediction
+                prediction_result = await predict_storm_response(db, monitor_business_id, latest_interim)
+                
+                if 'error' not in prediction_result:
+                    predicted_label = prediction_result.get('predicted_label', 'unknown')
+                    confidence = prediction_result.get('confidence', 0.0)
+                    confidence_level = prediction_result.get('confidence_level', 'low')
+                    suggestion = prediction_result.get('suggestion', '')
+                    
+                    # Use the predicted action directly (no mapping needed)
+                    ai_predicted_action = predicted_label
+                    ai_suggestion = f"{suggestion} (Confidence: {confidence_level}, {confidence:.2f})"
+                    
+                    logger.info(f"AI prediction for {monitor_business_id}: {predicted_label} ({confidence:.2f})")
+                else:
+                    logger.warning(f"AI prediction failed for {monitor_business_id}: {prediction_result['error']}")
+                    ai_suggestion = f"AI prediction unavailable: {prediction_result['error']}"
+                    
+            except Exception as ai_error:
+                logger.error(f"AI prediction error for {monitor_business_id}: {ai_error}")
+                ai_suggestion = f"AI prediction error: {str(ai_error)}"
 
             # 9. Save result to WeeklyQualityCheck (if no rule engine action, use AI/model action or leave blank)
             final_action = device_action or ai_predicted_action or None  # Prioritize rule engine action

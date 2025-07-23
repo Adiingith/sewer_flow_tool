@@ -16,6 +16,9 @@ build/
 # ========== VS Code ==========
 .vscode/
 
+# ========== IDE files ==========
+.idea/
+
 # ========== System files ==========
 .DS_Store
 Thumbs.db
@@ -23,8 +26,17 @@ Thumbs.db
 # ========== Docker logs ==========
 *.log
 
+# ========== Machine Learning logs ==========
+backend/machine_learning/logs/*.log
+backend/machine_learning/logs/*.log.*
+
 # ========== Ignore uploaded user files ==========
 backend/uploaded_files/
 
-# ========== Ignore markdown files ==========
-*.md
+# ========== Ignore specific markdown files ==========
+# Allow important documentation
+!README.md
+!*/README.md
+# But ignore user-generated markdown
+暴雨响应分类模型建模流程文档*.md
+Action和Data_quality映射关系.md
